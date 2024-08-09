@@ -3,6 +3,6 @@
 
 Mis soluciones de Acepta el Reto
 
-171 - [aceptaelreto](src/aceptaelreto/AbadiasPirenaicas_171.java)
+171 - [Abadias Pirenaicas](src/aceptaelreto/AbadiasPirenaicas_171.java)
 
 
