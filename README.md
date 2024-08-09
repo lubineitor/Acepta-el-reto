@@ -2,143 +2,143 @@
 
 Mis soluciones de Acepta el Reto
 
-**121 - Chicles de Regalo**  
+[Chicles de Regalo - 121](src/aceptaelreto/ChiclesDeRegalo_121.java)  
 [src/aceptaelreto/ChiclesDeRegalo_121.java](src/aceptaelreto/ChiclesDeRegalo_121.java)  
 
-**139 - Numeros Cubifinitos**  
+[Numeros Cubifinitos - 139](src/aceptaelreto/NumerosCubifinitos_139.java)  
 [src/aceptaelreto/NumerosCubifinitos_139.java](src/aceptaelreto/NumerosCubifinitos_139.java)  
 
-**141 - Paréntesis balanceados**  
+[Paréntesis balanceados - 141](src/aceptaelreto/ParéntesisBalenceados_141.java)  
 [src/aceptaelreto/ParéntesisBalenceados_141.java](src/aceptaelreto/ParéntesisBalenceados_141.java)  
 
-**144 - Teclado Estropeado**  
+[Teclado Estropeado - 144](src/aceptaelreto/TecladoEstropeado_144.java)  
 [src/aceptaelreto/TecladoEstropeado_144.java](src/aceptaelreto/TecladoEstropeado_144.java)  
 
-**144 - Teclado Estropeado 2**  
+[Teclado Estropeado 2 - 144](src/aceptaelreto/TecladoEstropeado2_144.java)  
 [src/aceptaelreto/TecladoEstropeado2_144.java](src/aceptaelreto/TecladoEstropeado2_144.java)  
 
-**156 - Ascensor**  
+[Ascensor - 156](src/aceptaelreto/Ascensor_156.java)  
 [src/aceptaelreto/Ascensor_156.java](src/aceptaelreto/Ascensor_156.java)  
 
-**156 - Ascensor 2**  
+[Ascensor 2 - 156](src/aceptaelreto/Ascensor2_156.java)  
 [src/aceptaelreto/Ascensor2_156.java](src/aceptaelreto/Ascensor2_156.java)  
 
-**156 - Volumen**  
+[Volumen - 156](src/aceptaelreto/Volumen_156.java)  
 [src/aceptaelreto/Volumen_156.java](src/aceptaelreto/Volumen_156.java)  
 
-**160 - Matrices Triangulares**  
+[Matrices Triangulares - 160](src/aceptaelreto/MatricesTriangulares_160.java)  
 [src/aceptaelreto/MatricesTriangulares_160.java](src/aceptaelreto/MatricesTriangulares_160.java)  
 
-**165 - Número hyperpar**  
+[Número hyperpar - 165](src/aceptaelreto/NumeroHyperpar_165.java)  
 [src/aceptaelreto/NumeroHyperpar_165.java](src/aceptaelreto/NumeroHyperpar_165.java)  
 
-**169 - Carrera Popular**  
+[Carrera Popular - 169](src/aceptaelreto/CarreraPopular_169.java)  
 [src/aceptaelreto/CarreraPopular_169.java](src/aceptaelreto/CarreraPopular_169.java)  
 
-**171 - Abadias Pirenaicas**  
+[Abadias Pirenaicas - 171](src/aceptaelreto/AbadiasPirenaicas_171.java)  
 [src/aceptaelreto/AbadiasPirenaicas_171.java](src/aceptaelreto/AbadiasPirenaicas_171.java)  
 
-**176 - Campo de Minas**  
+[Campo de Minas - 176](src/aceptaelreto/CampoDeMinas_176.java)  
 [src/aceptaelreto/CampoDeMinas_176.java](src/aceptaelreto/CampoDeMinas_176.java)  
 
-**182 - Persistencia multiplicativa de los números**  
+[Persistencia multiplicativa de los números - 182](src/aceptaelreto/PersistenciaMultiplicativaNumeros_182.java)  
 [src/aceptaelreto/PersistenciaMultiplicativaNumeros_182.java](src/aceptaelreto/PersistenciaMultiplicativaNumeros_182.java)  
 
-**185 - Potitos**  
+[Potitos - 185](src/aceptaelreto/Potitos_185.java)  
 [src/aceptaelreto/Potitos_185.java](src/aceptaelreto/Potitos_185.java)  
 
-**200 - Colores**  
+[Colores - 200](src/aceptaelreto/Colores_200.java)  
 [src/aceptaelreto/Colores_200.java](src/aceptaelreto/Colores_200.java)  
 
-**225 - El Otro Hijo de Bonacci**  
+[El Otro Hijo de Bonacci - 225](src/aceptaelreto/ElOtroHijoDeBonacci_225.java)  
 [src/aceptaelreto/ElOtroHijoDeBonacci_225.java](src/aceptaelreto/ElOtroHijoDeBonacci_225.java)  
 
-**238 - Repartiendo el botín**  
+[Repartiendo el botín - 238](src/aceptaelreto/RepartiendoElBotin_238.java)  
 [src/aceptaelreto/RepartiendoElBotin_238.java](src/aceptaelreto/RepartiendoElBotin_238.java)  
 
-**270 - Me Pillo El Toro**  
+[Me Pillo El Toro - 270](src/aceptaelreto/MePilloElToro_270.java)  
 [src/aceptaelreto/MePilloElToro_270.java](src/aceptaelreto/MePilloElToro_270.java)  
 
-**300 - Palabras Pentavocálicas**  
+[Palabras Pentavocálicas - 300](src/aceptaelreto/PalabrasPentavocalicas_300.java)  
 [src/aceptaelreto/PalabrasPentavocalicas_300.java](src/aceptaelreto/PalabrasPentavocalicas_300.java)  
 
-**300 - Palabras Pentavocálicas 2**  
+[Palabras Pentavocálicas 2 - 300](src/aceptaelreto/PalabrasPentavocalicas2_300.java)  
 [src/aceptaelreto/PalabrasPentavocalicas2_300.java](src/aceptaelreto/PalabrasPentavocalicas2_300.java)  
 
-**337 - La Abuela Maria**  
+[La Abuela Maria - 337](src/aceptaelreto/LaAbuelaMaria_337.java)  
 [src/aceptaelreto/LaAbuelaMaria_337.java](src/aceptaelreto/LaAbuelaMaria_337.java)  
 
-**368 - Cociendo Huevos**  
+[Cociendo Huevos - 368](src/aceptaelreto/CociendoHuevos_368.java)  
 [src/aceptaelreto/CociendoHuevos_368.java](src/aceptaelreto/CociendoHuevos_368.java)  
 
-**370 - Estación de tren**  
+[Estación de tren - 370](src/aceptaelreto/EstacionDeTren_370.java)  
 [src/aceptaelreto/EstacionDeTren_370.java](src/aceptaelreto/EstacionDeTren_370.java)  
 
-**402 - Las Dimensiones Del Puzzle**  
+[Las Dimensiones Del Puzzle - 402](src/aceptaelreto/LasDimensionesDelPuzzle_402.java)  
 [src/aceptaelreto/LasDimensionesDelPuzzle_402.java](src/aceptaelreto/LasDimensionesDelPuzzle_402.java)  
 
-**429 - Organizando Hangares**  
+[Organizando Hangares - 429](src/aceptaelreto/OrganizandoHangares_429.java)  
 [src/aceptaelreto/OrganizandoHangares_429.java](src/aceptaelreto/OrganizandoHangares_429.java)  
 
-**438 - Esgritura**  
+[Esgritura - 438](src/aceptaelreto/Esgritura_438.java)  
 [src/aceptaelreto/Esgritura_438.java](src/aceptaelreto/Esgritura_438.java)  
 
-**446 - Abuelas Falsas**  
+[Abuelas Falsas - 446](src/aceptaelreto/AbuelasFalsas_446.java)  
 [src/aceptaelreto/AbuelasFalsas_446.java](src/aceptaelreto/AbuelasFalsas_446.java)  
 
-**464 - Entrando en Peloton**  
+[Entrando en Peloton - 464](src/aceptaelreto/EntrandoEnPeloton_464.java)  
 [src/aceptaelreto/EntrandoEnPeloton_464.java](src/aceptaelreto/EntrandoEnPeloton_464.java)  
 
-**479 - El Hombre sin Miedo y Sin Radar**  
+[El Hombre sin Miedo y Sin Radar - 479](src/aceptaelreto/ElHombreSinMiedoYSinRadar_479.java)  
 [src/aceptaelreto/ElHombreSinMiedoYSinRadar_479.java](src/aceptaelreto/ElHombreSinMiedoYSinRadar_479.java)  
 
-**485 - Senda Pirenaica**  
+[Senda Pirenaica - 485](src/aceptaelreto/SendaPirenaica_485.java)  
 [src/aceptaelreto/SendaPirenaica_485.java](src/aceptaelreto/SendaPirenaica_485.java)  
 
-**514 - El mejor dato del paro**  
+[El mejor dato del paro - 514](src/aceptaelreto/ElMejorDatoDelParo_514.java)  
 [src/aceptaelreto/ElMejorDatoDelParo_514.java](src/aceptaelreto/ElMejorDatoDelParo_514.java)  
 
-**514 - El mejor dato del paro TLE**  
+[El mejor dato del paro TLE - 514](src/aceptaelreto/ElMejorDatoDelParoTLE_514.java)  
 [src/aceptaelreto/ElMejorDatoDelParoTLE_514.java](src/aceptaelreto/ElMejorDatoDelParoTLE_514.java)  
 
-**519 - Desbloqueo Retro**  
+[Desbloqueo Retro - 519](src/aceptaelreto/DesbloqueoRetro_519.java)  
 [src/aceptaelreto/DesbloqueoRetro_519.java](src/aceptaelreto/DesbloqueoRetro_519.java)  
 
-**522 - La desconfianza de la ASALE**  
+[La desconfianza de la ASALE - 522](src/aceptaelreto/DesconfianzaASALE_522.java)  
 [src/aceptaelreto/DesconfianzaASALE_522.java](src/aceptaelreto/DesconfianzaASALE_522.java)  
 
-**523 - Aburrimiento Autopista**  
+[Aburrimiento Autopista - 523](src/aceptaelreto/AburrimientoAutopista_523.java)  
 [src/aceptaelreto/AburrimientoAutopista_523.java](src/aceptaelreto/AburrimientoAutopista_523.java)  
 
-**523 - Aburrimiento Autopista 2**  
+[Aburrimiento Autopista 2 - 523](src/aceptaelreto/AburrimientoAutopista2_523.java)  
 [src/aceptaelreto/AburrimientoAutopista2_523.java](src/aceptaelreto/AburrimientoAutopista2_523.java)  
 
-**523 - Aburrimiento Autopista 3**  
+[Aburrimiento Autopista 3 - 523](src/aceptaelreto/AburrimientoAutopista3_523.java)  
 [src/aceptaelreto/AburrimientoAutopista3_523.java](src/aceptaelreto/AburrimientoAutopista3_523.java)  
 
-**558 - Camel Casi**  
+[Camel Casi - 558](src/aceptaelreto/CamelCasi_558.java)  
 [src/aceptaelreto/CamelCasi_558.java](src/aceptaelreto/CamelCasi_558.java)  
 
-**593 - Pruebas en lotes**  
+[Pruebas en lotes - 593](src/aceptaelreto/PruebasPorLotes_593.java)  
 [src/aceptaelreto/PruebasPorLotes_593.java](src/aceptaelreto/PruebasPorLotes_593.java)  
 
-**600 - Puntos De Silla**  
+[Puntos De Silla - 600](src/aceptaelreto/PuntosDeSilla_600.java)  
 [src/aceptaelreto/PuntosDeSilla_600.java](src/aceptaelreto/PuntosDeSilla_600.java)  
 
-**600 - Puntos De Silla 2**  
+[Puntos De Silla 2 - 600](src/aceptaelreto/PuntosDeSilla2_600.java)  
 [src/aceptaelreto/PuntosDeSilla2_600.java](src/aceptaelreto/PuntosDeSilla2_600.java)  
 
-**611 - Conan Doyley Sean Connery**  
+[Conan Doyley Sean Connery - 611](src/aceptaelreto/ConanDoyleySeanConnery_611.java)  
 [src/aceptaelreto/ConanDoyleySeanConnery_611.java](src/aceptaelreto/ConanDoyleySeanConnery_611.java)  
 
-**611 - Conan Doyley Sean Connery Vectores**  
+[Conan Doyley Sean Connery Vectores - 611](src/aceptaelreto/ConanDoyleySeanConneryVectores_611.java)  
 [src/aceptaelreto/ConanDoyleySeanConneryVectores_611.java](src/aceptaelreto/ConanDoyleySeanConneryVectores_611.java)  
 
-**641 - Incidencia Acumulada**  
+[Incidencia Acumulada - 641](src/aceptaelreto/IncidenteDhahran_641.java)  
 [src/aceptaelreto/IncidenteDhahran_641.java](src/aceptaelreto/IncidenteDhahran_641.java)  
 
-**667 - Pipos**  
+[Pipos - 667](src/aceptaelreto/Pipos_667.java)  
 [src/aceptaelreto/Pipos_667.java](src/aceptaelreto/Pipos_667.java)  
 
-**760 - Bloque Seguro**  
+[Bloque Seguro - 760](src/aceptaelreto/BloqueSeguro_760.java)  
 [src/aceptaelreto/BloqueSeguro_760.java](src/aceptaelreto/BloqueSeguro_760.java)
