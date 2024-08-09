@@ -33,16 +33,16 @@ public class ConstanteDeKaprekar_100 {
 	}
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
-		int testCases = scanner.nextInt();
+		int testCases = sc.nextInt();
 
 		for (int i = 0; i < testCases; i++) {
-			int num = scanner.nextInt();
+			int num = sc.nextInt();
 
 			System.out.println(kaprekarRoutine(num));
 		}
 
-		scanner.close();
+		sc.close();
 	}
 }
