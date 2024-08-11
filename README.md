@@ -58,4 +58,5 @@ Mis soluciones de Acepta el Reto
 | 611          | [ConanDoyleySeanConneryVectores_611.java](src/aceptaelreto/ConanDoyleySeanConneryVectores_611.java)          | [Conan Doyley Sean Connery Vectores](https://aceptaelreto.com/problem/statement.php?id=611)  |
 | 641          | [IncidenteDhahran_641.java](src/aceptaelreto/IncidenteDhahran_641.java)          | [Incidencia Acumulada](https://aceptaelreto.com/problem/statement.php?id=641)  |
 | 667          | [Pipos_667.java](src/aceptaelreto/Pipos_667.java)          | [Pipos](https://aceptaelreto.com/problem/statement.php?id=667)  |
+| 738          | [Torfiles_738.java](src/aceptaelreto/Torfiles_738.java)          | [Torfiles](https://aceptaelreto.com/problem/statement.php?id=738)  |
 | 760          | [BloqueSeguro_760.java](src/aceptaelreto/BloqueSeguro_760.java)          | [Bloque Seguro](https://aceptaelreto.com/problem/statement.php?id=760)  |
