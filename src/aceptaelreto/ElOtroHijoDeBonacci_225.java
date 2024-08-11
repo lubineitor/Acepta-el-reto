@@ -41,7 +41,7 @@ public class ElOtroHijoDeBonacci_225 {
 	}
 
 	private static long[][] matrixPower(long[][] M, int power) {
-		long[][] result = { { 1, 0 }, { 0, 1 } }; 
+		long[][] result = { { 1, 0 }, { 0, 1 } };
 		long[][] base = M;
 
 		while (power > 0) {
