@@ -3,7 +3,8 @@
 Mis soluciones de Acepta el Reto
 
 100 - [Constante de Kaprekar](src/aceptaelreto/ConstanteDeKaprekar_100.java)  
-101 - [Cuadrados Diabólicos Y Esotericos](src/aceptaelreto/CuadradosDiabolicosYEsotericos_101.java)  
+101 - [Cuadrados Diabólicos Y Esotericos](src/aceptaelreto/CuadradosDiabolicosYEsotericos_101.java)
+102 - [Encriptación De Mensajes](src/aceptaelreto/EncriptacionDeMensajes_102.java)  
 121 - [Chicles de Regalo](src/aceptaelreto/ChiclesDeRegalo_121.java)  
 139 - [Numeros Cubifinitos](src/aceptaelreto/NumerosCubifinitos_139.java)  
 141 - [Paréntesis balanceados](src/aceptaelreto/ParéntesisBalenceados_141.java)  
