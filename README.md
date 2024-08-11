@@ -1,7 +1,7 @@
 # Mis Soluciones de Acepta el Reto
 
-| **ID** | **Título**                                                | **Enlace al Ejercicio**                               | **Enlace en Acepta el Reto**                               |
-|--------|-----------------------------------------------------------|------------------------------------------------------|-----------------------------------------------------------|
+| **ID** | **Título**                                                | **Enlace en Acepta el Reto**                               |
+|--------|-----------------------------------------------------------|-----------------------------------------------------------|
 | 100    | [Constante de Kaprekar](src/aceptaelreto/ConstanteDeKaprekar_100.java)    | [Enlace](https://aceptaelreto.com/problem/statement.php?id=100)    |
 | 101    | [Cuadrados Diabólicos Y Esotéricos](src/aceptaelreto/CuadradosDiabolicosYEsotericos_101.java)   | [Enlace](https://aceptaelreto.com/problem/statement.php?id=101)   |
 | 102    | [Encriptación De Mensajes](src/aceptaelreto/EncriptacionDeMensajes_102.java)    | [Enlace](https://aceptaelreto.com/problem/statement.php?id=102)    |
@@ -56,3 +56,4 @@
 | 641    | [Incidencia Acumulada](src/aceptaelreto/IncidenteDhahran_641.java)   | [Enlace](https://aceptaelreto.com/problem/statement.php?id=641)  |
 | 667    | [Pipos](src/aceptaelreto/Pipos_667.java)   | [Enlace](https://aceptaelreto.com/problem/statement.php?id=667)  |
 | 760    | [Bloque Seguro](src/aceptaelreto/BloqueSeguro_760.java)    | [Enlace](https://aceptaelreto.com/problem/statement.php?id=760)  |
+
