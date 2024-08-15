@@ -16,6 +16,7 @@ Mis soluciones de Acepta el Reto
 | 114          | [UltimoDigitoDelFactorial_114.java](src/aceptaelreto/UltimoDigitoDelFactorial_114.java)          | [Último dígito del factorial](https://aceptaelreto.com/problem/statement.php?id=114)  |
 | 116          | [HolaMundo_116.java](src/aceptaelreto/HolaMundo_116.java)          | [¡Hola Mundo!](https://aceptaelreto.com/problem/statement.php?id=116)  |
 | 121          | [ChiclesDeRegalo_121.java](src/aceptaelreto/ChiclesDeRegalo_121.java)          | [Chicles de Regalo](https://aceptaelreto.com/problem/statement.php?id=121)  |
+| 131          | [LlenandoPiscinas_131.java](src/aceptaelreto/LlenandoPiscinas_131.java)          | [Llenando piscinas](https://aceptaelreto.com/problem/statement.php?id=131)  |
 | 139          | [NumerosCubifinitos_139.java](src/aceptaelreto/NumerosCubifinitos_139.java)          | [Números Cubifinitos](https://aceptaelreto.com/problem/statement.php?id=139)  |
 | 141          | [ParéntesisBalenceados_141.java](src/aceptaelreto/ParéntesisBalenceados_141.java)          | [Paréntesis balanceados](https://aceptaelreto.com/problem/statement.php?id=141)  |
 | 144          | [TecladoEstropeado_144.java](src/aceptaelreto/TecladoEstropeado_144.java)          | [Teclado Estropeado](https://aceptaelreto.com/problem/statement.php?id=144)  |
