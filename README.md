@@ -20,6 +20,7 @@ Mis soluciones de Acepta el Reto
 | 117          | [LaFiestaAburrida_117.java](src/aceptaelreto/LaFiestaAburrida_117.java)          | [La fiesta aburrida](https://aceptaelreto.com/problem/statement.php?id=117)  |
 | 119          | [EscudosDelEjercitoRomano_119.java](src/aceptaelreto/EscudosDelEjercitoRomano_119.java)          | [Escudos del ejército romano](https://aceptaelreto.com/problem/statement.php?id=119)  |
 | 121          | [ChiclesDeRegalo_121.java](src/aceptaelreto/ChiclesDeRegalo_121.java)          | [Chicles de Regalo](https://aceptaelreto.com/problem/statement.php?id=121)  |
+| 125          | [NumerosVampiro_125.java](src/aceptaelreto/NumerosVampiro_125.java)          | [Números vampiro](https://aceptaelreto.com/problem/statement.php?id=125)  |
 | 131          | [LlenandoPiscinas_131.java](src/aceptaelreto/LlenandoPiscinas_131.java)          | [Llenando piscinas](https://aceptaelreto.com/problem/statement.php?id=131)  |
 | 139          | [NumerosCubifinitos_139.java](src/aceptaelreto/NumerosCubifinitos_139.java)          | [Números Cubifinitos](https://aceptaelreto.com/problem/statement.php?id=139)  |
 | 141          | [ParéntesisBalenceados_141.java](src/aceptaelreto/ParéntesisBalenceados_141.java)          | [Paréntesis balanceados](https://aceptaelreto.com/problem/statement.php?id=141)  |
