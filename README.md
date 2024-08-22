@@ -39,6 +39,7 @@ Mis soluciones de Acepta el Reto
 | 182          | [PersistenciaMultiplicativaNumeros_182.java](src/aceptaelreto/PersistenciaMultiplicativaNumeros_182.java)          | [Persistencia multiplicativa de los números](https://aceptaelreto.com/problem/statement.php?id=182)  |
 | 185          | [Potitos_185.java](src/aceptaelreto/Potitos_185.java)          | [Potitos](https://aceptaelreto.com/problem/statement.php?id=185)  |
 | 200          | [Colores_200.java](src/aceptaelreto/Colores_200.java)          | [Colores](https://aceptaelreto.com/problem/statement.php?id=200)  |
+| 222          | [SerieDePotencias_222.java](src/aceptaelreto/SerieDePotencias_222.java)          | [Serie de potencias](https://aceptaelreto.com/problem/statement.php?id=222)  |
 | 225          | [ElOtroHijoDeBonacci_225.java](src/aceptaelreto/ElOtroHijoDeBonacci_225.java)          | [El Otro Hijo de Bonacci](https://aceptaelreto.com/problem/statement.php?id=225)  |
 | 238          | [RepartiendoElBotin_238.java](src/aceptaelreto/RepartiendoElBotin_238.java)          | [Repartiendo el botín](https://aceptaelreto.com/problem/statement.php?id=238)  |
 | 270          | [MePilloElToro_270.java](src/aceptaelreto/MePilloElToro_270.java)          | [Me Pillo El Toro](https://aceptaelreto.com/problem/statement.php?id=270)  |
