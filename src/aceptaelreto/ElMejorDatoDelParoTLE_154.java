@@ -2,7 +2,7 @@ package aceptaelreto;
 
 import java.util.Scanner;
 
-public class ElMejorDatoDelParoTLE_154 {
+public class ElMejorDatoDelParoTLE_514 {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
