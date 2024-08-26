@@ -17,6 +17,7 @@ Mis soluciones de Acepta el Reto
 | 110          | [Estrofas_110.java](src/aceptaelreto/Estrofas_110.java)          | [Estrofas](https://aceptaelreto.com/problem/statement.php?id=110)  |
 | 111          | [AprobarQuimica_111.java](src/aceptaelreto/AprobarQuimica_111.java)          | [Aprobar química](https://aceptaelreto.com/problem/statement.php?id=111)  |
 | 112          | [RadaresDeTramo_112.java](src/aceptaelreto/RadaresDeTramo_112.java)          | [Radares de Tramo](https://aceptaelreto.com/problem/statement.php?id=112)  |
+| 113          | [SemaforosSinParar_113.java](src/aceptaelreto/SemaforosSinParar_113.java)          | [Semáforos sin parar](https://aceptaelreto.com/problem/statement.php?id=113)  |
 | 114          | [UltimoDigitoDelFactorial_114.java](src/aceptaelreto/UltimoDigitoDelFactorial_114.java)          | [Último dígito del factorial](https://aceptaelreto.com/problem/statement.php?id=114)  |
 | 116          | [HolaMundo_116.java](src/aceptaelreto/HolaMundo_116.java)          | [¡Hola Mundo!](https://aceptaelreto.com/problem/statement.php?id=116)  |
 | 117          | [LaFiestaAburrida_117.java](src/aceptaelreto/LaFiestaAburrida_117.java)          | [La fiesta aburrida](https://aceptaelreto.com/problem/statement.php?id=117)  |
