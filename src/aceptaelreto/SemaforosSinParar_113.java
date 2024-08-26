@@ -34,11 +34,11 @@ public class SemaforosSinParar_113 {
 	}
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		while (true) {
-			int numberOfLights = scanner.nextInt();
-			int maxSpeed = scanner.nextInt();
+			int numberOfLights = sc.nextInt();
+			int maxSpeed = sc.nextInt();
 			if (numberOfLights == 0)
 				break;
 
@@ -47,18 +47,18 @@ public class SemaforosSinParar_113 {
 			boolean hasRedOnlyLight = false;
 
 			for (int i = 0; i < numberOfLights - 1; ++i) {
-				int gap = scanner.nextInt();
-				int redDuration = scanner.nextInt();
-				int greenDuration = scanner.nextInt();
+				int gap = sc.nextInt();
+				int redDuration = sc.nextInt();
+				int greenDuration = sc.nextInt();
 				if (greenDuration == 0)
 					hasRedOnlyLight = true;
 				totalDistance += gap;
 				trafficLights.add(new TrafficLight(redDuration, greenDuration, (int) totalDistance));
 			}
 
-			int finalGap = scanner.nextInt();
-			int finalRedDuration = scanner.nextInt();
-			int finalGreenDuration = scanner.nextInt();
+			int finalGap = sc.nextInt();
+			int finalRedDuration = sc.nextInt();
+			int finalGreenDuration = sc.nextInt();
 			if (finalGreenDuration == 0)
 				hasRedOnlyLight = true;
 			totalDistance += finalGap;
@@ -117,6 +117,6 @@ public class SemaforosSinParar_113 {
 			}
 		}
 
-		scanner.close();
+		sc.close();
 	}
 }
