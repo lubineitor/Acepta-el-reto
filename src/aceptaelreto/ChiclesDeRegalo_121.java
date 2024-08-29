@@ -1,46 +1,47 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class ChiclesDeRegalo_121 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
-		Scanner sc = new Scanner(System.in);
-		int envoltorios, regalo, chicles, contador;
-		int envoltoriosRestantes, chiclesAnterior;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter pw = new PrintWriter(System.out);
+		StringBuilder sb = new StringBuilder();
 
-		while (true) {
-			envoltorios = sc.nextInt();
-			regalo = sc.nextInt();
-			chicles = sc.nextInt();
+		String line;
+		while ((line = br.readLine()) != null) {
+			String[] inputs = line.split(" ");
+			int envoltorios = Integer.parseInt(inputs[0]);
+			int regalo = Integer.parseInt(inputs[1]);
+			int chicles = Integer.parseInt(inputs[2]);
 
 			if (envoltorios == 0 && regalo == 0 && chicles == 0) {
 				break;
 			}
 			if (regalo >= envoltorios && chicles >= envoltorios) {
-				System.out.println("RUINA");
+				sb.append("RUINA\n");
 			} else if (regalo == 0) {
-				System.out.println(chicles + " " + chicles);
+				sb.append(chicles).append(" ").append(chicles).append("\n");
 			} else {
-				contador = 0;
-				envoltoriosRestantes = 0;
+				int contador = 0;
+				int envoltoriosRestantes = 0;
 				while ((chicles + envoltoriosRestantes) >= envoltorios) {
 					contador += chicles;
 
-					chiclesAnterior = chicles;
+					int chiclesAnterior = chicles;
 					chicles = (chicles + envoltoriosRestantes) / envoltorios * regalo;
 					envoltoriosRestantes = (chiclesAnterior + envoltoriosRestantes) % envoltorios;
-
 				}
 				contador += chicles;
 				envoltoriosRestantes += chicles;
-				System.out.print(contador + " ");
-				System.out.println(envoltoriosRestantes);
+				sb.append(contador).append(" ").append(envoltoriosRestantes).append("\n");
 			}
-
 		}
 
+		pw.print(sb.toString());
+		pw.flush();
+		pw.close();
 	}
-
 }
