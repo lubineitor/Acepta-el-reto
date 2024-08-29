@@ -1,32 +1,39 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class SendaPirenaica_485 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter pw = new PrintWriter(System.out);
+		StringBuilder sb = new StringBuilder();
+
 		int numeroEtapas;
-		int distanciaEtapa[];
+		int[] distanciaEtapa;
 		int total;
 
-		while ((numeroEtapas = sc.nextInt()) != 0) {
+		String linea;
+		while (!(linea = br.readLine()).equals("0")) {
+			numeroEtapas = Integer.parseInt(linea);
 			distanciaEtapa = new int[numeroEtapas];
 			total = 0;
-			for (int i = 0; i < distanciaEtapa.length; i++) {
-				distanciaEtapa[i] = sc.nextInt();
+
+			String[] distancias = br.readLine().split(" ");
+			for (int i = 0; i < numeroEtapas; i++) {
+				distanciaEtapa[i] = Integer.parseInt(distancias[i]);
 				total += distanciaEtapa[i];
 			}
 
-			System.out.print(total);
-			for (int i = 1; i < distanciaEtapa.length; i++) {
+			sb.append(total);
+			for (int i = 1; i < numeroEtapas; i++) {
 				total -= distanciaEtapa[i - 1];
-				System.out.print(" " + total);
-
+				sb.append(" ").append(total);
 			}
-			System.out.println("");
+			sb.append("\n");
 		}
 
+		pw.print(sb.toString());
+		pw.flush();
 	}
-
 }
