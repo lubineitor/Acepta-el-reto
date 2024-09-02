@@ -71,6 +71,7 @@ Mis soluciones de Acepta el Reto
 | 523          | [AburrimientoAutopista3_523.java](src/aceptaelreto/AburrimientoAutopista3_523.java)          | [Aburrimiento Autopista 3](https://aceptaelreto.com/problem/statement.php?id=523)  |
 | 540          | [PorElHuecoDeLaEscalera_540.java](src/aceptaelreto/PorElHuecoDeLaEscalera_540.java)          | [Por el hueco de la escalera](https://aceptaelreto.com/problem/statement.php?id=540)  |
 | 558          | [CamelCasi_558.java](src/aceptaelreto/CamelCasi_558.java)          | [Camel Casi](https://aceptaelreto.com/problem/statement.php?id=558)  |
+| 582          | [SonLosCuartos_582.java](src/aceptaelreto/SonLosCuartos_582.java)          | [¡Son los cuartos!](https://aceptaelreto.com/problem/statement.php?id=582)  |
 | 593          | [PruebasPorLotes_593.java](src/aceptaelreto/PruebasPorLotes_593.java)          | [Pruebas en lotes](https://aceptaelreto.com/problem/statement.php?id=593)  |
 | 600          | [PuntosDeSilla_600.java](src/aceptaelreto/PuntosDeSilla_600.java)          | [Puntos De Silla](https://aceptaelreto.com/problem/statement.php?id=600)  |
 | 600          | [PuntosDeSilla2_600.java](src/aceptaelreto/PuntosDeSilla2_600.java)          | [Puntos De Silla 2](https://aceptaelreto.com/problem/statement.php?id=600)  |
