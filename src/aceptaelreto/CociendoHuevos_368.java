@@ -1,37 +1,34 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class CociendoHuevos_368 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				PrintWriter pw = new PrintWriter(System.out)) {
 
-		int huevos, capacidad, coccion;
+			while (true) {
+				String line = br.readLine();
 
-		do {
-			huevos = sc.nextInt();
-			capacidad = sc.nextInt();
-			coccion = 10;
+				if (line == null || line.trim().isEmpty()) {
+					break;
+				}
 
-			if (huevos == 0) {
-				break;
+				String[] input = line.split(" ");
+				int huevos = Integer.parseInt(input[0]);
+				int capacidad = Integer.parseInt(input[1]);
+
+				if (huevos == 0 && capacidad == 0) {
+					break;
+				}
+
+				int coccion = ((huevos + capacidad - 1) / capacidad) * 10;
+				pw.println(coccion);
 			}
 
-			if (huevos <= capacidad) {
-				System.out.println(coccion);
-			} else {
-				do {
-					if (huevos > capacidad) {
-						huevos -= capacidad;
-						coccion += 10;
-					}
-
-				} while (huevos > capacidad);
-				System.out.println(coccion);
-			}
-
-		} while (huevos != 0 && capacidad != 0);
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
 	}
-
 }
