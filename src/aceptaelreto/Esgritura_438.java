@@ -1,37 +1,43 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class Esgritura_438 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
-		Scanner sc = new Scanner(System.in);
-		int letras, signos;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter pw = new PrintWriter(System.out);
+		StringBuilder sb = new StringBuilder();
+
 		String linea;
+		int letras, signos;
 		char letra;
 
-		while (sc.hasNext()) {
-			linea = sc.nextLine();
+		while ((linea = br.readLine()) != null && !linea.isEmpty()) {
 			letras = 0;
 			signos = 0;
 
 			for (int i = 0; i < linea.length(); i++) {
 				letra = linea.charAt(i);
-				if ((letra > 96 && letra < 123) || (letra > 64 && letra < 91)) {
+				if ((letra >= 'a' && letra <= 'z') || (letra >= 'A' && letra <= 'Z')) {
 					letras++;
-				} else if (letra == '!') {
+				}
+				else if (letra == '!') {
 					signos++;
 				}
-
 			}
+
 			if (signos > letras) {
-				System.out.println("ESGRITO");
+				sb.append("ESGRITO\n");
 			} else {
-				System.out.println("escrito");
+				sb.append("escrito\n");
 			}
-
 		}
-	}
 
+		pw.print(sb.toString());
+
+		pw.flush();
+		pw.close();
+	}
 }
