@@ -1,6 +1,6 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class MatricesTriangulares_160 {
 
@@ -26,25 +26,29 @@ public class MatricesTriangulares_160 {
 		return true;
 	}
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int filas;
-		int[][] matriz;
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter pw = new PrintWriter(System.out);
 
-		while ((filas = sc.nextInt()) != 0) {
-			matriz = new int[filas][filas]; // Matriz cuadrada
+		String input;
+		while (!(input = br.readLine()).equals("0")) {
+			int filas = Integer.parseInt(input);
+			int[][] matriz = new int[filas][filas];
+
 			for (int fila = 0; fila < filas; fila++) {
+				String[] datosFila = br.readLine().split(" ");
 				for (int col = 0; col < filas; col++) {
-					matriz[fila][col] = sc.nextInt();
-
+					matriz[fila][col] = Integer.parseInt(datosFila[col]);
 				}
 			}
+
 			if (esTriangularSuperior(matriz) || esTriangularInferior(matriz)) {
-				System.out.println("SI");
+				pw.println("SI");
 			} else {
-				System.out.println("NO");
+				pw.println("NO");
 			}
 		}
-	}
 
+		pw.flush();
+	}
 }
