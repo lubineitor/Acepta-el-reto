@@ -1,10 +1,9 @@
 package aceptaelreto;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 class Ciclista implements Comparable<Ciclista> {
-
 	public int posicion;
 	public int tiempo; // Tiempo medido en segundos
 
@@ -20,19 +19,19 @@ class Ciclista implements Comparable<Ciclista> {
 		// valor positivo: si este objeto es mayor
 		return this.tiempo - c.tiempo;
 	}
-
 }
 
 public class EntrandoEnPeloton_464 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter pw = new PrintWriter(System.out);
 		Ciclista[] ciclistas, entradas;
 		int numeroCiclistas;
 
-		while (sc.hasNext()) {
-			sc.nextLine();
-			numeroCiclistas = sc.nextInt();
+		String input;
+		while ((input = br.readLine()) != null && !input.isEmpty()) {
+			numeroCiclistas = Integer.parseInt(input.trim());
 			ciclistas = new Ciclista[numeroCiclistas];
 			entradas = new Ciclista[numeroCiclistas];
 			int horas, minutos, segundos;
@@ -40,8 +39,7 @@ public class EntrandoEnPeloton_464 {
 			int posicion;
 
 			for (int i = 0; i < numeroCiclistas; i++) {
-				tiempo = sc.nextLine();
-//                String[] tiempos = tiempo.split(":");
+				tiempo = br.readLine().trim();
 
 				horas = Integer.parseInt(tiempo.substring(0, 2));
 				minutos = Integer.parseInt(tiempo.substring(3, 5));
@@ -50,22 +48,27 @@ public class EntrandoEnPeloton_464 {
 				ciclistas[i] = new Ciclista(horas * 3600 + minutos * 60 + segundos);
 				entradas[i] = ciclistas[i];
 			}
+
 			Arrays.sort(ciclistas);
 
 			posicion = 1;
 			ciclistas[0].posicion = posicion;
+
 			for (int i = 1; i < ciclistas.length; i++) {
 				if (ciclistas[i].tiempo > ciclistas[i - 1].tiempo + 1) {
 					posicion = i + 1;
 				}
 				ciclistas[i].posicion = posicion;
 			}
+
 			for (Ciclista entrada : entradas) {
-				System.out.println(entrada.posicion);
+				pw.println(entrada.posicion);
 			}
-			System.out.println("---");
+
+			pw.println("---");
 		}
 
+		pw.flush();
+		pw.close();
 	}
-
 }
