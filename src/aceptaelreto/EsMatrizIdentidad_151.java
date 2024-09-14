@@ -1,44 +1,48 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class EsMatrizIdentidad_151 {
 
-	private static boolean esIdentidad(int[][] matriz) {
-		for (int f = 0; f < matriz.length; f++) {
-			for (int c = 0; c < matriz[0].length; c++) {
-				if (f == c) {
-					if (matriz[f][c] != 1) {
-						return false;
-					} else {
-						if (matriz[f][c] != 0) {
-							return false;
-						}
-					}
-				}
-			}
-		}
-		return true;
-	}
+    private static boolean esIdentidad(int[][] matriz) {
+        int n = matriz.length;
+        for (int f = 0; f < n; f++) {
+            if (matriz[f][f] != 1) {
+                return false;
+            }
+            for (int c = 0; c < n; c++) {
+                if (f != c && matriz[f][c] != 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int filas;
-		int[][] matriz;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter pw = new PrintWriter(System.out);
 
-		while ((filas = sc.nextInt()) != 0) {
-			matriz = new int[filas][filas];
-			for (int f = 0; f < matriz.length; f++) {
-				for (int c = 0; c < matriz[f].length; c++) {
-					matriz[f][c] = sc.nextInt();
-				}
-			}
-			if (esIdentidad(matriz)) {
-				System.out.println("SI");
-			} else {
-				System.out.println("NO");
-			}
-		}
+        String linea;
+        while ((linea = br.readLine()) != null) {
+            int filas = Integer.parseInt(linea.trim());
+            if (filas == 0) break;
 
-	}
+            int[][] matriz = new int[filas][filas];
+            for (int f = 0; f < filas; f++) {
+                String[] valores = br.readLine().trim().split(" ");
+                for (int c = 0; c < filas; c++) {
+                    matriz[f][c] = Integer.parseInt(valores[c]);
+                }
+            }
+
+            if (esIdentidad(matriz)) {
+                pw.println("SI");
+            } else {
+                pw.println("NO");
+            }
+        }
+
+        pw.flush();
+    }
 }

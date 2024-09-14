@@ -33,6 +33,7 @@ Mis soluciones de Acepta el Reto
 | 141          | [ParéntesisBalenceados_141.java](src/aceptaelreto/ParéntesisBalenceados_141.java)          | [Paréntesis balanceados](https://aceptaelreto.com/problem/statement.php?id=141)  |
 | 144          | [TecladoEstropeado_144.java](src/aceptaelreto/TecladoEstropeado_144.java)          | [Teclado Estropeado](https://aceptaelreto.com/problem/statement.php?id=144)  |
 | 144          | [TecladoEstropeado2_144.java](src/aceptaelreto/TecladoEstropeado2_144.java)          | [Teclado Estropeado 2](https://aceptaelreto.com/problem/statement.php?id=144)  |
+| 151          | [EsMatrizIdentidad_151.java](src/aceptaelreto/EsMatrizIdentidad_151.java)          | [¿Es matriz identidad?](https://aceptaelreto.com/problem/statement.php?id=151)  |
 | 156          | [Ascensor_156.java](src/aceptaelreto/Ascensor_156.java)          | [Ascensor](https://aceptaelreto.com/problem/statement.php?id=156)  |
 | 156          | [Ascensor2_156.java](src/aceptaelreto/Ascensor2_156.java)          | [Ascensor 2](https://aceptaelreto.com/problem/statement.php?id=156)  |
 | 156          | [Volumen_156.java](src/aceptaelreto/Volumen_156.java)          | [Volumen](https://aceptaelreto.com/problem/statement.php?id=156)  |
