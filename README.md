@@ -80,6 +80,7 @@ Mis soluciones de Acepta el Reto
 | 611          | [ConanDoyleySeanConnery_611.java](src/aceptaelreto/ConanDoyleySeanConnery_611.java)          | [Conan Doyley Sean Connery](https://aceptaelreto.com/problem/statement.php?id=611)  |
 | 611          | [ConanDoyleySeanConneryVectores_611.java](src/aceptaelreto/ConanDoyleySeanConneryVectores_611.java)          | [Conan Doyley Sean Connery Vectores](https://aceptaelreto.com/problem/statement.php?id=611)  |
 | 641          | [IncidenteDhahran_641.java](src/aceptaelreto/IncidenteDhahran_641.java)          | [Incidencia Acumulada](https://aceptaelreto.com/problem/statement.php?id=641)  |
+| 653          | [RunnersApp_653.java](src/aceptaelreto/RunnersApp_653.java)          | [RunnersApp](https://aceptaelreto.com/problem/statement.php?id=653)  |
 | 663          | [ContandoDesdeElCero_663.java](src/aceptaelreto/ContandoDesdeElCero_663.java)          | [Contando desde el cero](https://aceptaelreto.com/problem/statement.php?id=663)  |
 | 667          | [Pipos_667.java](src/aceptaelreto/Pipos_667.java)          | [Pipos](https://aceptaelreto.com/problem/statement.php?id=667)  |
 | 738          | [Torfiles_738.java](src/aceptaelreto/Torfiles_738.java)          | [Torfiles](https://aceptaelreto.com/problem/statement.php?id=738)  |
