@@ -1,22 +1,39 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class Ascensor_156 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter writer = new PrintWriter(System.out);
 
-		Scanner sc = new Scanner(System.in);
-		int recorrido, origen, destino;
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String[] numbers = line.split(" ");
 
-		while ((origen = sc.nextInt()) != -1) {
-			// Cada iteracción representa un caso de prueba.
-			recorrido = 0;
-			while ((destino = sc.nextInt()) != -1) {
-				recorrido += Math.abs(origen - destino);
-				origen = destino;
-			}
-			System.out.println(recorrido);
-		}
-	}
+            int anterior = Integer.parseInt(numbers[0]);
+            if (anterior < 0) {
+                break;
+            }
+
+            int suma = 0;
+
+            for (int i = 1; i < numbers.length; i++) {
+                int siguiente = Integer.parseInt(numbers[i]);
+                if (siguiente == -1) {
+                    break;
+                }
+
+                suma += Math.abs(anterior - siguiente);
+                anterior = siguiente;
+            }
+
+            writer.println(suma);
+        }
+
+        writer.flush();
+        writer.close();
+        reader.close();
+    }
 }
