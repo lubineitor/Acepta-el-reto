@@ -1,77 +1,83 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class DesconfianzaASALE_522 {
 
-	private static float codigo(String palabra, int posicion) {
-		if (palabra.charAt(posicion) == 'c' && palabra.charAt(posicion + 1) == 'h') {
-			return 99.5F;
-		} else if (palabra.charAt(posicion) == 'l' && palabra.charAt(posicion + 1) == 'l') {
-			return 108.5F;
-		} else {
-			return palabra.charAt(posicion);
-		}
+	public static void main(String[] args) throws IOException {
 
-	}
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter writer = new PrintWriter(System.out, true);
 
-	private static int siguiente(float codigo, int valor) {
-		if (codigo == (int) codigo) {
-			return valor + 1;
-		} else {
-			return valor + 2;
-		}
-	}
+		String word1, word2;
+		int index1, index2;
+		double charValue1, charValue2;
+		boolean isFirstWordSmaller;
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String palabra1, palabra2;
-		float codigo1, codigo2;
-		int puntero1, puntero2;
-		int min;
-		boolean impreso;
+		String line;
+		while ((line = reader.readLine()) != null) {
 
-		// Cada iteracion del siguiente bucle representa un caso nuevo
-		while (sc.hasNext()) {
+			String[] words = line.split(" ");
 
-			palabra1 = sc.next();
-			palabra2 = sc.next();
-
-			impreso = false;
-			puntero1 = 0;// Apunta al carácter que se esta procesando de palabra 1
-			puntero2 = 0;// Apunta al carácter que se esta procesando de palabra 2
-
-			min = Math.min(palabra1.length(), palabra2.length());
-
-			for (int i = 0; i < min; i++) {
-				codigo1 = codigo(palabra1, puntero1);
-				codigo2 = codigo(palabra2, puntero2);
-
-				if (codigo1 < codigo2) {
-					System.out.println(palabra1);
-					impreso = true;
-					break;
-				} else if (codigo2 < codigo1) {
-					System.out.println(palabra2);
-					impreso = true;
-					break;
-				} else {
-					puntero1 = siguiente(codigo1, puntero1);
-					puntero2 = siguiente(codigo2, puntero2);
-					if (puntero1 >= min || puntero2 >= min) {
-						break;
-					}
-				}
-				if (!impreso) {
-					if (palabra1.length() < palabra2.length()) {
-						System.out.println(palabra1);
-					} else {
-						System.out.println(palabra2);
-					}
-				}
+			if (words.length < 2) {
+				continue;
 			}
 
-		}
+			word1 = words[0].toLowerCase();
+			word2 = words[1].toLowerCase();
 
+			isFirstWordSmaller = false;
+			index1 = index2 = 0;
+
+			while (true) {
+
+				if (index1 > word1.length() - 1) {
+					isFirstWordSmaller = true;
+					break;
+				}
+				if (index2 > word2.length() - 1)
+					break;
+
+				if (index1 < word1.length() - 1) {
+					if (word1.charAt(index1) == 'c' && word1.charAt(index1 + 1) == 'h') {
+						charValue1 = ((double) 'c') + 0.5;
+						index1++;
+					} else if (word1.charAt(index1) == 'l' && word1.charAt(index1 + 1) == 'l') {
+						charValue1 = ((double) 'l') + 0.5;
+						index1++;
+					} else {
+						charValue1 = word1.charAt(index1);
+					}
+				} else {
+					charValue1 = word1.charAt(index1);
+				}
+
+				if (index2 < word2.length() - 1) {
+					if (word2.charAt(index2) == 'c' && word2.charAt(index2 + 1) == 'h') {
+						charValue2 = ((double) 'c') + 0.5;
+						index2++;
+					} else if (word2.charAt(index2) == 'l' && word2.charAt(index2 + 1) == 'l') {
+						charValue2 = ((double) 'l') + 0.5;
+						index2++;
+					} else {
+						charValue2 = word2.charAt(index2);
+					}
+				} else {
+					charValue2 = word2.charAt(index2);
+				}
+
+				if (charValue1 < charValue2) {
+					isFirstWordSmaller = true;
+					break;
+				}
+				if (charValue2 < charValue1)
+					break;
+
+				index1++;
+				index2++;
+			}
+
+			writer.println(isFirstWordSmaller ? word1 : word2);
+		}
 	}
 }
