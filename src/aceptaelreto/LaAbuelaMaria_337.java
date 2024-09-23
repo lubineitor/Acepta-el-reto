@@ -1,40 +1,41 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class LaAbuelaMaria_337 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		final int DIENTES = 6;
-		Scanner sc = new Scanner(System.in);
-		int casos = sc.nextInt();
-		int[] arriba = new int[DIENTES];
-		int[] abajo = new int[DIENTES];
-		int suma;
-		boolean hueco;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter pw = new PrintWriter(System.out);
+		StringBuilder sb = new StringBuilder();
 
-		for (; casos-- > 0;) {
-			for (int i = 0; i < DIENTES; i++) {
-				arriba[i] = sc.nextInt();
-			}
-			for (int i = 0; i < DIENTES; i++) {
-				abajo[i] = sc.nextInt();
-			}
-			suma = arriba[0] + abajo[0];
-			hueco = false;
+		int casos = Integer.parseInt(br.readLine());
+
+		while (casos-- > 0) {
+			String[] arriba = br.readLine().split(" ");
+			String[] abajo = br.readLine().split(" ");
+
+			int suma = Integer.parseInt(arriba[0]) + Integer.parseInt(abajo[0]);
+			boolean hueco = false;
+
 			for (int i = 1; i < DIENTES; i++) {
-				hueco = suma != arriba[i] + abajo[i];
-				if (hueco) {
+				if (suma != Integer.parseInt(arriba[i]) + Integer.parseInt(abajo[i])) {
+					hueco = true;
 					break;
 				}
 			}
+
 			if (hueco) {
-				System.out.println("NO");
+				sb.append("NO\n");
 			} else {
-				System.out.println("SI");
+				sb.append("SI\n");
 			}
 		}
 
+		pw.print(sb.toString());
+		pw.flush();
+		pw.close();
+		br.close();
 	}
-
 }
