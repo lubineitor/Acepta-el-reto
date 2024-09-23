@@ -1,58 +1,66 @@
 package aceptaelreto;
 
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class RepartiendoElBotin_238 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int[] totales;
-		int numBilletes, villanos, ladron;
-		LinkedList<Integer>[] reparto;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter pw = new PrintWriter(System.out);
+        
+        String input;
+        int[] totales;
+        int numBilletes, villanos, ladron;
+        LinkedList<Integer>[] reparto;
+        boolean firstCase = true;
 
-		while ((numBilletes = sc.nextInt()) != 0) {
-			villanos = sc.nextInt();
+        while ((input = br.readLine()) != null) {
+            String[] primeraLinea = input.split(" ");
+            numBilletes = Integer.parseInt(primeraLinea[0]);
+            villanos = Integer.parseInt(primeraLinea[1]);
 
-			reparto = new LinkedList[villanos];
-			totales = new int[villanos];
+            if (numBilletes == 0 && villanos == 0) {
+                break;
+            }
 
-			if (numBilletes == 0 && villanos == 0) {
-				break;
-			}
+            reparto = new LinkedList[villanos];
+            totales = new int[villanos];
 
-			// Hay que crear cada una de las listas que corresponden
-			// a cada uno de los ladrones. Recordar que son objetos.
-			for (int i = 0; i < villanos; i++) {
-				reparto[i] = new LinkedList<Integer>();
-			}
+            for (int i = 0; i < villanos; i++) {
+                reparto[i] = new LinkedList<Integer>();
+            }
 
-			// En cada iteraci{on proceso un billete y se le asigna al
-			// ladrón que corresponda
-			ladron = 0;
-			for (int i = 0; i < numBilletes; i++) {
-				reparto[ladron].add(sc.nextInt());
-				totales[ladron] += reparto[ladron].getLast();
-				if (ladron == villanos - 1) {
-					ladron = 0;
-				} else {
-					ladron++;
-				}
-			}
+            String[] billetes = br.readLine().split(" ");
+            ladron = 0;
 
-			for (int i = 0; i < villanos; i++) {
-				System.out.print(totales[i] + ":");
-				if (!reparto[i].isEmpty()) {
-					System.out.print(reparto[i].poll());
-					while (!reparto[i].isEmpty()) {
-						System.out.print(" " + reparto[i].poll());
-					}
-				}
-				System.out.println("");
+            for (int i = 0; i < numBilletes; i++) {
+                int billete = Integer.parseInt(billetes[i]);
+                reparto[ladron].add(billete);
+                totales[ladron] += billete;
 
-			}
+                ladron = (ladron + 1) % villanos;
+            }
 
-		}
+            if (!firstCase) {
+                pw.println("---");
+            }
+            firstCase = false;
 
-	}
+            for (int i = 0; i < villanos; i++) {
+                pw.print(totales[i] + ":");
+                if (!reparto[i].isEmpty()) {
+                    pw.print(reparto[i].poll());
+                    while (!reparto[i].isEmpty()) {
+                        pw.print(" " + reparto[i].poll());
+                    }
+                }
+                pw.println();
+            }
+        }
+
+        pw.println("---");
+        pw.flush();
+        pw.close();
+    }
 }
