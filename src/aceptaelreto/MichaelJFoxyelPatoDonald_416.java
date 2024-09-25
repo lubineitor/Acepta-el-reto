@@ -1,29 +1,54 @@
 package aceptaelreto;
 
-import java.util.HashSet;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class MichaelJFoxyelPatoDonald_416 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int numFechas;
-		String fecha;
-		HashSet<String> fechas = new HashSet();
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				PrintWriter pw = new PrintWriter(System.out)) {
 
-		while ((numFechas = sc.nextInt()) != 0) {
-			fechas.clear();
-			for (int i = 0; i < numFechas; i++) {
-				fecha = sc.next();
-				fecha = fecha.substring(0, fecha.length() - 5);
-				fechas.add(fecha);
+			String line;
+			while ((line = br.readLine()) != null) {
+				line = line.trim();
+				if (line.isEmpty()) {
+					continue;
+				}
+
+				int numFechas;
+				try {
+					numFechas = Integer.parseInt(line);
+				} catch (NumberFormatException e) {
+					continue;
+				}
+
+				if (numFechas == 0) {
+					break;
+				}
+
+				HashSet<String> fechas = new HashSet<>();
+				boolean foundDuplicate = false;
+
+				String[] fechaArray = br.readLine().trim().split(" ");
+				for (String fecha : fechaArray) {
+					if (fecha.length() >= 5) {
+						fecha = fecha.substring(0, fecha.length() - 5);
+					}
+
+					if (!fechas.add(fecha)) {
+						foundDuplicate = true;
+					}
+				}
+
+				if (foundDuplicate) {
+					pw.println("SI");
+				} else {
+					pw.println("NO");
+				}
 			}
-			if (fechas.size() == numFechas) {
-				System.out.println("NO");
-			} else {
-				System.out.println("SI");
-			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
-
 }

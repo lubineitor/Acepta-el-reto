@@ -36,7 +36,6 @@ Mis soluciones de Acepta el Reto
 | 151          | [EsMatrizIdentidad_151.java](src/aceptaelreto/EsMatrizIdentidad_151.java)          | [¿Es matriz identidad?](https://aceptaelreto.com/problem/statement.php?id=151)  |
 | 156          | [Ascensor_156.java](src/aceptaelreto/Ascensor_156.java)          | [Ascensor](https://aceptaelreto.com/problem/statement.php?id=156)  |
 | 156          | [Ascensor2_156.java](src/aceptaelreto/Ascensor2_156.java)          | [Ascensor 2](https://aceptaelreto.com/problem/statement.php?id=156)  |
-| 156          | [Volumen_156.java](src/aceptaelreto/Volumen_156.java)          | [Volumen](https://aceptaelreto.com/problem/statement.php?id=156)  |
 | 160          | [MatricesTriangulares_160.java](src/aceptaelreto/MatricesTriangulares_160.java)          | [Matrices Triangulares](https://aceptaelreto.com/problem/statement.php?id=160)  |
 | 165          | [NumeroHyperpar_165.java](src/aceptaelreto/NumeroHyperpar_165.java)          | [Número hyperpar](https://aceptaelreto.com/problem/statement.php?id=165)  |
 | 169          | [CarreraPopular_169.java](src/aceptaelreto/CarreraPopular_169.java)          | [Carrera Popular](https://aceptaelreto.com/problem/statement.php?id=169)  |
