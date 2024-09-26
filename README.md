@@ -19,6 +19,7 @@ Mis soluciones de Acepta el Reto
 | 112          | [RadaresDeTramo_112.java](src/aceptaelreto/RadaresDeTramo_112.java)          | [Radares de Tramo](https://aceptaelreto.com/problem/statement.php?id=112)  |
 | 113          | [SemaforosSinParar_113.java](src/aceptaelreto/SemaforosSinParar_113.java)          | [Semáforos sin parar](https://aceptaelreto.com/problem/statement.php?id=113)  |
 | 114          | [UltimoDigitoDelFactorial_114.java](src/aceptaelreto/UltimoDigitoDelFactorial_114.java)          | [Último dígito del factorial](https://aceptaelreto.com/problem/statement.php?id=114)  |
+| 115          | [NumeroDeKaprekar_115.java](src/aceptaelreto/NumeroDeKaprekar_115.java)          | [Número de Kaprekar](https://aceptaelreto.com/problem/statement.php?id=115)  |
 | 116          | [HolaMundo_116.java](src/aceptaelreto/HolaMundo_116.java)          | [¡Hola Mundo!](https://aceptaelreto.com/problem/statement.php?id=116)  |
 | 117          | [LaFiestaAburrida_117.java](src/aceptaelreto/LaFiestaAburrida_117.java)          | [La fiesta aburrida](https://aceptaelreto.com/problem/statement.php?id=117)  |
 | 119          | [EscudosDelEjercitoRomano_119.java](src/aceptaelreto/EscudosDelEjercitoRomano_119.java)          | [Escudos del ejército romano](https://aceptaelreto.com/problem/statement.php?id=119)  |
