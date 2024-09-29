@@ -3,11 +3,12 @@ package aceptaelreto;
 import java.io.*;
 
 public class NumerosVampiro_125 {
+
 	private static int[] contarDigitos(long numero) {
 		int[] cuenta = new int[10];
-		while (numero > 0) {
-			cuenta[(int) (numero % 10)]++;
-			numero /= 10;
+		String strNumero = Long.toString(numero);
+		for (char c : strNumero.toCharArray()) {
+			cuenta[c - '0']++;
 		}
 		return cuenta;
 	}
@@ -20,7 +21,6 @@ public class NumerosVampiro_125 {
 			return false;
 
 		int[] cuentaOriginal = contarDigitos(numero);
-
 		int mitad = n / 2;
 
 		long limiteInferior = (long) Math.pow(10, mitad - 1);
@@ -35,21 +35,7 @@ public class NumerosVampiro_125 {
 					if (i % 10 == 0 && j % 10 == 0)
 						continue;
 
-					int[] cuentaColmillos = new int[10];
-					long temp = i;
-
-					while (temp > 0) {
-						cuentaColmillos[(int) (temp % 10)]++;
-						temp /= 10;
-					}
-
-					temp = j;
-					while (temp > 0) {
-						cuentaColmillos[(int) (temp % 10)]++;
-						temp /= 10;
-					}
-
-					if (compararCuentas(cuentaOriginal, cuentaColmillos)) {
+					if (compararCuentas(cuentaOriginal, contarDigitos(i), contarDigitos(j))) {
 						return true;
 					}
 				}
@@ -58,9 +44,15 @@ public class NumerosVampiro_125 {
 		return false;
 	}
 
-	private static boolean compararCuentas(int[] cuenta1, int[] cuenta2) {
+	private static boolean compararCuentas(int[] cuentaOriginal, int[] cuentaColmillo1, int[] cuentaColmillo2) {
+		int[] cuentaTotal = new int[10];
+
 		for (int i = 0; i < 10; i++) {
-			if (cuenta1[i] != cuenta2[i]) {
+			cuentaTotal[i] = cuentaColmillo1[i] + cuentaColmillo2[i];
+		}
+
+		for (int i = 0; i < 10; i++) {
+			if (cuentaOriginal[i] != cuentaTotal[i]) {
 				return false;
 			}
 		}
@@ -69,16 +61,18 @@ public class NumerosVampiro_125 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		int casos = Integer.parseInt(reader.readLine());
 
 		for (int i = 0; i < casos; i++) {
 			long numero = Long.parseLong(reader.readLine());
 			if (esVampiro(numero)) {
-				System.out.println("SI");
+				writer.write("SI\n");
 			} else {
-				System.out.println("NO");
+				writer.write("NO\n");
 			}
 		}
+		writer.flush();
 	}
 }
