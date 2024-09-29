@@ -1,9 +1,12 @@
 package aceptaelreto;
 
 import java.util.*;
+import java.io.*;
 
 public class CodigosDeBarras_106 {
 	private static final Map<String, String> PAISES_MAP;
+	private static final Map<String, String> CODIGOS_ADICIONALES;
+
 	static {
 		PAISES_MAP = new HashMap<>();
 		PAISES_MAP.put("380", "Bulgaria");
@@ -12,10 +15,7 @@ public class CodigosDeBarras_106 {
 		PAISES_MAP.put("759", "Venezuela");
 		PAISES_MAP.put("850", "Cuba");
 		PAISES_MAP.put("890", "India");
-	}
 
-	private static final Map<String, String> CODIGOS_ADICIONALES;
-	static {
 		CODIGOS_ADICIONALES = new HashMap<>();
 		CODIGOS_ADICIONALES.put("70", "Noruega");
 		CODIGOS_ADICIONALES.put("50", "Inglaterra");
@@ -29,7 +29,11 @@ public class CodigosDeBarras_106 {
 		}
 
 		String prefix = codigo.substring(0, 2);
-		return CODIGOS_ADICIONALES.getOrDefault(prefix, "Desconocido");
+		if (CODIGOS_ADICIONALES.containsKey(prefix)) {
+			return CODIGOS_ADICIONALES.get(prefix);
+		} else {
+			return "Desconocido";
+		}
 	}
 
 	private static boolean esCodigoValido(String codigo) {
@@ -52,25 +56,35 @@ public class CodigosDeBarras_106 {
 	}
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter out = new PrintWriter(System.out, true);
 
-		while (true) {
-			String codigo = sc.nextLine();
-			if (codigo.equals("0")) {
-				break;
-			}
-
-			if (esCodigoValido(codigo)) {
-				if (codigo.length() >= 13) {
-					String pais = identificarPais(codigo);
-					System.out.println("SI " + pais);
-				} else {
-					System.out.println("SI");
+		try {
+			String codigo;
+			while ((codigo = br.readLine()) != null) {
+				if (codigo.equals("0")) {
+					break;
 				}
-			} else {
-				System.out.println("NO");
+
+				if (esCodigoValido(codigo)) {
+					if (codigo.length() >= 13) {
+						String pais = identificarPais(codigo);
+						out.println("SI " + pais);
+					} else {
+						out.println("SI");
+					}
+				} else {
+					out.println("NO");
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
 		}
-		sc.close();
 	}
 }
