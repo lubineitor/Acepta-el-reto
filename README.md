@@ -53,6 +53,7 @@ Mis soluciones de Acepta el Reto
 | 300          | [PalabrasPentavocalicas2_300.java](src/aceptaelreto/PalabrasPentavocalicas2_300.java)          | [Palabras Pentavocálicas 2](https://aceptaelreto.com/problem/statement.php?id=300)  |
 | 337          | [LaAbuelaMaria_337.java](src/aceptaelreto/LaAbuelaMaria_337.java)          | [La Abuela María](https://aceptaelreto.com/problem/statement.php?id=337)  |
 | 344          | [ConectandoCables_344.java](src/aceptaelreto/ConectandoCables_344.java)          | [Conectando cables](https://aceptaelreto.com/problem/statement.php?id=344)  |
+| 362          | [ElDiaDeNavidad_362.java](src/aceptaelreto/ElDiaDeNavidad_362.java)          | [El día de Navidad](https://aceptaelreto.com/problem/statement.php?id=362)  |
 | 368          | [CociendoHuevos_368.java](src/aceptaelreto/CociendoHuevos_368.java)          | [Cociendo Huevos](https://aceptaelreto.com/problem/statement.php?id=368)  |
 | 370          | [EstacionDeTren_370.java](src/aceptaelreto/EstacionDeTren_370.java)          | [Estación de tren](https://aceptaelreto.com/problem/statement.php?id=370)  |
 | 402          | [LasDimensionesDelPuzzle_402.java](src/aceptaelreto/LasDimensionesDelPuzzle_402.java)          | [Las Dimensiones Del Puzzle](https://aceptaelreto.com/problem/statement.php?id=402)  |
