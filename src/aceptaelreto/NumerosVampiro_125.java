@@ -6,36 +6,36 @@ public class NumerosVampiro_125 {
 
 	private static int[] contarDigitos(long numero) {
 		int[] cuenta = new int[10];
-		String strNumero = Long.toString(numero);
-		for (char c : strNumero.toCharArray()) {
-			cuenta[c - '0']++;
+		while (numero > 0) {
+			cuenta[(int) (numero % 10)]++;
+			numero /= 10;
 		}
 		return cuenta;
 	}
 
 	public static boolean esVampiro(long numero) {
 		String strNumero = Long.toString(numero);
-		int n = strNumero.length();
+		int longitud = strNumero.length();
 
-		if (n % 2 != 0)
+		if (longitud % 2 != 0)
 			return false;
 
-		int[] cuentaOriginal = contarDigitos(numero);
-		int mitad = n / 2;
-
+		int mitad = longitud / 2;
 		long limiteInferior = (long) Math.pow(10, mitad - 1);
 		long limiteSuperior = (long) Math.pow(10, mitad);
 
-		for (long i = limiteInferior; i < limiteSuperior; i++) {
-			if (numero % i == 0) {
-				long j = numero / i;
+		int[] cuentaOriginal = contarDigitos(numero);
 
-				if (j >= limiteInferior && j < limiteSuperior) {
+		for (long factor1 = limiteInferior; factor1 < limiteSuperior; factor1++) {
+			if (numero % factor1 == 0) {
+				long factor2 = numero / factor1;
 
-					if (i % 10 == 0 && j % 10 == 0)
+				if (factor2 >= limiteInferior && factor2 < limiteSuperior) {
+
+					if (factor1 % 10 == 0 && factor2 % 10 == 0)
 						continue;
 
-					if (compararCuentas(cuentaOriginal, contarDigitos(i), contarDigitos(j))) {
+					if (compararCuentas(cuentaOriginal, contarDigitos(factor1), contarDigitos(factor2))) {
 						return true;
 					}
 				}
@@ -44,15 +44,9 @@ public class NumerosVampiro_125 {
 		return false;
 	}
 
-	private static boolean compararCuentas(int[] cuentaOriginal, int[] cuentaColmillo1, int[] cuentaColmillo2) {
-		int[] cuentaTotal = new int[10];
-
+	private static boolean compararCuentas(int[] cuentaOriginal, int[] cuentaFactor1, int[] cuentaFactor2) {
 		for (int i = 0; i < 10; i++) {
-			cuentaTotal[i] = cuentaColmillo1[i] + cuentaColmillo2[i];
-		}
-
-		for (int i = 0; i < 10; i++) {
-			if (cuentaOriginal[i] != cuentaTotal[i]) {
+			if (cuentaOriginal[i] != cuentaFactor1[i] + cuentaFactor2[i]) {
 				return false;
 			}
 		}
