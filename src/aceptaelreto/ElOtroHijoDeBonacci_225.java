@@ -1,10 +1,6 @@
 package aceptaelreto;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 
 public class ElOtroHijoDeBonacci_225 {
 	private static final int MOD = 1_000_000_007;
