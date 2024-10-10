@@ -3,47 +3,48 @@ package aceptaelreto;
 import java.io.*;
 
 public class SerieDePotencias_222 {
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringBuilder sb = new StringBuilder();
-
+	public static void main(String[] args) {
 		final int MOD = 1000007;
-		String line;
 
-		StringBuilder input = new StringBuilder();
-		while ((line = br.readLine()) != null) {
-			input.append(line).append("\n");
-		}
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+			StringBuilder sb = new StringBuilder();
+			String line;
 
-		String[] lines = input.toString().split("\n");
-		for (String l : lines) {
-			l = l.trim();
-			if (l.isEmpty())
-				continue;
+			while ((line = br.readLine()) != null) {
+				line = line.trim();
+				if (line.isEmpty())
+					continue;
 
-			String[] tokens = l.split("\\s+");
-			if (tokens.length != 2)
-				continue;
+				String[] tokens = line.split("\\s+");
+				if (tokens.length != 2)
+					continue;
 
-			int x, n;
-			try {
-				x = Integer.parseInt(tokens[0]);
-				n = Integer.parseInt(tokens[1]);
-			} catch (NumberFormatException e) {
-				continue;
+				try {
+					int x = Integer.parseInt(tokens[0]);
+					int n = Integer.parseInt(tokens[1]);
+
+					sb.append(calcularSumaDePotencias(x, n, MOD)).append("\n");
+				} catch (NumberFormatException e) {
+					e.printStackTrace();
+				}
 			}
 
-			int potencia = 1, suma = 1;
-			for (int i = 0; i < n; ++i) {
-				potencia = (potencia * x) % MOD;
-				suma = (suma + potencia) % MOD;
-			}
+			System.out.print(sb.toString());
 
-			sb.append(suma).append("\n");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static int calcularSumaDePotencias(int x, int n, int mod) {
+		int potencia = 1;
+		int suma = 1;
+
+		for (int i = 1; i <= n; i++) {
+			potencia = (potencia * x) % mod;
+			suma = (suma + potencia) % mod;
 		}
 
-		System.out.print(sb.toString());
-
-		br.close();
+		return suma;
 	}
 }
