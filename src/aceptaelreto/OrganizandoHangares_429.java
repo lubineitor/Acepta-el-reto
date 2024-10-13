@@ -1,6 +1,6 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class OrganizandoHangares_429 {
 
@@ -17,11 +17,10 @@ public class OrganizandoHangares_429 {
 	}
 
 	public static boolean hayEspacio(int[] hangares, int[] naves) {
-		int posicion;
-		for (int i = 0; i < naves.length; i++) {
-			posicion = hangarConMasEspacio(hangares);
-			if (naves[i] <= hangares[posicion]) {
-				hangares[posicion] -= naves[i];
+		for (int nave : naves) {
+			int posicion = hangarConMasEspacio(hangares);
+			if (nave <= hangares[posicion]) {
+				hangares[posicion] -= nave;
 			} else {
 				return false;
 			}
@@ -30,27 +29,38 @@ public class OrganizandoHangares_429 {
 	}
 
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		int[] hangares, naves;
-		int numHangares, numNaves;
+		try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+				PrintWriter writer = new PrintWriter(System.out)) {
 
-		while ((numHangares = in.nextInt()) != 0) {
-			hangares = new int[numHangares];
-			for (int i = 0; i < numHangares; i++) {
-				hangares[i] = in.nextInt();
-			}
-			numNaves = in.nextInt();
-			naves = new int[numNaves];
-			for (int i = 0; i < numNaves; i++) {
-				naves[i] = in.nextInt();
-			}
+			String line;
+			while ((line = reader.readLine()) != null && !line.equals("0")) {
+				int numHangares = Integer.parseInt(line.trim());
+				if (numHangares == 0)
+					break;
 
-			if (hayEspacio(hangares, naves)) {
-				System.out.println("SI");
-			} else {
-				System.out.println("NO");
+				int[] hangares = new int[numHangares];
+				String[] hangarInputs = reader.readLine().trim().split("\\s+");
+				for (int i = 0; i < numHangares; i++) {
+					hangares[i] = Integer.parseInt(hangarInputs[i]);
+				}
+
+				int numNaves = Integer.parseInt(reader.readLine().trim());
+				int[] naves = new int[numNaves];
+				String[] naveInputs = reader.readLine().trim().split("\\s+");
+				for (int i = 0; i < numNaves; i++) {
+					naves[i] = Integer.parseInt(naveInputs[i]);
+				}
+
+				if (hayEspacio(hangares, naves)) {
+					writer.println("SI");
+				} else {
+					writer.println("NO");
+				}
 			}
+			writer.flush();
+
+		} catch (IOException | NumberFormatException e) {
+			e.printStackTrace();
 		}
 	}
-
 }
