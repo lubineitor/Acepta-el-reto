@@ -77,6 +77,7 @@ Mis soluciones de Acepta el Reto
 | 558          | [CamelCasi_558.java](src/aceptaelreto/CamelCasi_558.java)          | [Camel Casi](https://aceptaelreto.com/problem/statement.php?id=558)  |
 | 582          | [SonLosCuartos_582.java](src/aceptaelreto/SonLosCuartos_582.java)          | [¡Son los cuartos!](https://aceptaelreto.com/problem/statement.php?id=582)  |
 | 593          | [PruebasPorLotes_593.java](src/aceptaelreto/PruebasPorLotes_593.java)          | [Pruebas en lotes](https://aceptaelreto.com/problem/statement.php?id=593)  |
+| 599          | [PepeCasanova_599.java](src/aceptaelreto/PepeCasanova_599.java)          | [Pepe Casanova](https://aceptaelreto.com/problem/statement.php?id=599)  |
 | 600          | [PuntosDeSilla_600.java](src/aceptaelreto/PuntosDeSilla_600.java)          | [Puntos De Silla](https://aceptaelreto.com/problem/statement.php?id=600)  |
 | 600          | [PuntosDeSilla2_600.java](src/aceptaelreto/PuntosDeSilla2_600.java)          | [Puntos De Silla 2](https://aceptaelreto.com/problem/statement.php?id=600)  |
 | 611          | [ConanDoyleySeanConnery_611.java](src/aceptaelreto/ConanDoyleySeanConnery_611.java)          | [Conan Doyley Sean Connery](https://aceptaelreto.com/problem/statement.php?id=611)  |
