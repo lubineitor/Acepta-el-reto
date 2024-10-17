@@ -4,44 +4,56 @@ import java.io.*;
 
 public class ChiclesDeRegalo_121 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		PrintWriter pw = new PrintWriter(System.out);
-		StringBuilder sb = new StringBuilder();
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				PrintWriter pw = new PrintWriter(System.out)) {
 
-		String line;
-		while ((line = br.readLine()) != null) {
-			String[] inputs = line.split(" ");
-			int envoltorios = Integer.parseInt(inputs[0]);
-			int regalo = Integer.parseInt(inputs[1]);
-			int chicles = Integer.parseInt(inputs[2]);
+			StringBuilder sb = new StringBuilder();
 
-			if (envoltorios == 0 && regalo == 0 && chicles == 0) {
-				break;
-			}
-			if (regalo >= envoltorios && chicles >= envoltorios) {
-				sb.append("RUINA\n");
-			} else if (regalo == 0) {
-				sb.append(chicles).append(" ").append(chicles).append("\n");
-			} else {
-				int contador = 0;
-				int envoltoriosRestantes = 0;
-				while ((chicles + envoltoriosRestantes) >= envoltorios) {
-					contador += chicles;
+			String line;
+			while ((line = br.readLine()) != null) {
+				try {
+					String[] inputs = line.split(" ");
+					int envoltorios = Integer.parseInt(inputs[0]);
+					int regalo = Integer.parseInt(inputs[1]);
+					int chicles = Integer.parseInt(inputs[2]);
 
-					int chiclesAnterior = chicles;
-					chicles = (chicles + envoltoriosRestantes) / envoltorios * regalo;
-					envoltoriosRestantes = (chiclesAnterior + envoltoriosRestantes) % envoltorios;
+					if (envoltorios == 0 && regalo == 0 && chicles == 0) {
+						break;
+					}
+
+					if (regalo >= envoltorios && chicles >= envoltorios) {
+						sb.append("RUINA\n");
+						continue;
+					}
+
+					if (regalo == 0) {
+						sb.append(chicles).append(" ").append(chicles).append("\n");
+						continue;
+					}
+
+					int contador = chicles;
+					int envoltoriosRestantes = chicles;
+
+					while (envoltoriosRestantes >= envoltorios) {
+						int nuevosChicles = (envoltoriosRestantes / envoltorios) * regalo;
+						envoltoriosRestantes = (envoltoriosRestantes % envoltorios) + nuevosChicles;
+						contador += nuevosChicles;
+					}
+
+					sb.append(contador).append(" ").append(envoltoriosRestantes).append("\n");
+
+				} catch (NumberFormatException e) {
+					e.printStackTrace();
 				}
-				contador += chicles;
-				envoltoriosRestantes += chicles;
-				sb.append(contador).append(" ").append(envoltoriosRestantes).append("\n");
 			}
-		}
 
-		pw.print(sb.toString());
-		pw.flush();
-		pw.close();
+			pw.print(sb.toString());
+			pw.flush();
+
+		} catch (IOException e) {
+			System.err.println(e.getMessage());
+		}
 	}
 }
