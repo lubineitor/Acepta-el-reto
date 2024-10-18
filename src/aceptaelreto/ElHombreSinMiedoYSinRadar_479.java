@@ -1,90 +1,82 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class ElHombreSinMiedoYSinRadar_479 {
 
-	private static String distancia(char[][] matriz, int f, int c, String direccion) {
-		int contador = 1;
-		boolean villano = false;
-		switch (direccion) {
-		case "ARRIBA":
-			for (int i = f - 1; i >= 0; i--) {
-				if (matriz[i][c] == 'X') {
-					villano = true;
-					break;
-				} else {
-					contador++;
-				}
-			}
-			break;
-		case "ABAJO":
-			for (int i = f + 1; i < matriz.length; i++) {
-				if (matriz[i][c] == 'X') {
-					villano = true;
-					break;
-				} else {
-					contador++;
-				}
-			}
-			break;
-		case "DERECHA":
-			for (int i = c + 1; i < matriz[f].length; i++) {
-				if (matriz[i][c] == 'X') {
-					villano = true;
-					break;
-				} else {
-					contador++;
-				}
-			}
-			break;
-		default:
-			for (int i = c - 1; i >= 0; i--) {
-				if (matriz[i][c] == 'X') {
-					villano = true;
-					break;
-				} else {
-					contador++;
-				}
-			}
+    private static String distancia(char[][] matriz, int f, int c, String direccion) {
+        int contador = 0;
+        int df = 0, dc = 0;
 
-		}
-		if (villano) {
-			return String.valueOf(contador);
-		} else {
-			return "NINGUNO";
-		}
-	}
+        switch (direccion.trim()) {
+            case "ARRIBA":
+                df = -1;
+                break;
+            case "ABAJO":
+                df = 1;
+                break;
+            case "DERECHA":
+                dc = 1;
+                break;
+            case "IZQUIERDA":
+                dc = -1;
+                break;
+            default:
+                return "NINGUNO";
+        }
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+        int nuevaF = f + df;
+        int nuevaC = c + dc;
 
-		int filas, col, fOrigen, cOrigen;
-		char[][] matriz = null;
-		String linea;
-		int casos;
-		String direccion;
+        while (nuevaF >= 0 && nuevaF < matriz.length && nuevaC >= 0 && nuevaC < matriz[0].length) {
+            contador++;
+            if (matriz[nuevaF][nuevaC] == 'X') {
+                return String.valueOf(contador);
+            }
+            nuevaF += df;
+            nuevaC += dc;
+        }
 
-		while ((filas = sc.nextInt()) != 0) {
-			col = sc.nextInt();
-			sc.nextLine(); // Vacío el buffer (queda un enter pendiente de procesar)
-			matriz = new char[filas][col];
-			for (int f = 0; f < matriz.length; f++) {
-				linea = sc.nextLine();
-				for (int c = 0; c < matriz[f].length; c++) {
-					matriz[f][c] = linea.charAt(c);
-				}
-			}
-			casos = sc.nextInt();
-			for (; casos-- > 0;) {
-				fOrigen = sc.nextInt() - 1;
-				cOrigen = sc.nextInt() - 1;
-				direccion = sc.nextLine();
+        return "NINGUNO";
+    }
 
-				System.out.println(distancia(matriz, fOrigen, cOrigen, direccion.substring(1, direccion.length())));
-			}
-		}
+    public static void main(String[] args) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            String linea;
 
-	}
+            while ((linea = br.readLine()) != null) {
+                String[] dimensiones = linea.trim().split("\\s+");
+                int filas = Integer.parseInt(dimensiones[0]);
+                if (filas == 0) break;
+                
+                int col = Integer.parseInt(dimensiones[1]);
+                char[][] matriz = new char[filas][col];
 
+                for (int f = 0; f < filas; f++) {
+                    matriz[f] = br.readLine().toCharArray();
+                }
+
+                int casos = Integer.parseInt(br.readLine().trim());
+                for (int i = 0; i < casos; i++) {
+                    linea = br.readLine().trim();
+                    String[] datos = linea.split("\\s+");
+                    int fOrigen = Integer.parseInt(datos[0]) - 1;
+                    int cOrigen = Integer.parseInt(datos[1]) - 1;
+
+                    if (fOrigen == -1 && cOrigen == -1) {
+                        return;
+                    }
+
+                    String direccion = datos[2];
+                    System.out.println(distancia(matriz, fOrigen, cOrigen, direccion));
+                }
+                
+                System.out.println("---");
+            }
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        } catch (NumberFormatException e) {
+            System.err.println(e.getMessage());
+        }
+    }
 }
