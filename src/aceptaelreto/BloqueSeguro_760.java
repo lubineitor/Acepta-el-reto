@@ -1,6 +1,6 @@
 package aceptaelreto;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class BloqueSeguro_760 {
 	private static final int MOD = 1_000_000_007;
