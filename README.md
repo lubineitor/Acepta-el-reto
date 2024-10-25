@@ -48,6 +48,7 @@ Mis soluciones de Acepta el Reto
 | 222          | [SerieDePotencias_222.java](src/aceptaelreto/SerieDePotencias_222.java)          | [Serie de potencias](https://aceptaelreto.com/problem/statement.php?id=222)  |
 | 225          | [ElOtroHijoDeBonacci_225.java](src/aceptaelreto/ElOtroHijoDeBonacci_225.java)          | [El Otro Hijo de Bonacci](https://aceptaelreto.com/problem/statement.php?id=225)  |
 | 238          | [RepartiendoElBotin_238.java](src/aceptaelreto/RepartiendoElBotin_238.java)          | [Repartiendo el botín](https://aceptaelreto.com/problem/statement.php?id=238)  |
+| 248          | [LosPremiosDeLasTragaperras_248.java](src/aceptaelreto/LosPremiosDeLasTragaperras_248.java)          | [Los premios de las tragaperras](https://aceptaelreto.com/problem/statement.php?id=248)  |
 | 270          | [MePilloElToro_270.java](src/aceptaelreto/MePilloElToro_270.java)          | [Me Pillo El Toro](https://aceptaelreto.com/problem/statement.php?id=270)  |
 | 300          | [PalabrasPentavocalicas_300.java](src/aceptaelreto/PalabrasPentavocalicas_300.java)          | [Palabras Pentavocálicas](https://aceptaelreto.com/problem/statement.php?id=300)  |
 | 300          | [PalabrasPentavocalicas2_300.java](src/aceptaelreto/PalabrasPentavocalicas2_300.java)          | [Palabras Pentavocálicas 2](https://aceptaelreto.com/problem/statement.php?id=300)  |
