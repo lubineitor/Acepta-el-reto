@@ -25,6 +25,8 @@ Mis soluciones de Acepta el Reto
 | 119          | [EscudosDelEjercitoRomano_119.java](src/aceptaelreto/EscudosDelEjercitoRomano_119.java)          | [Escudos del ejército romano](https://aceptaelreto.com/problem/statement.php?id=119)  |
 | 120          | [ConstanteMagica_120.java](src/aceptaelreto/ConstanteMagica_120.java)          | [Constante mágica](https://aceptaelreto.com/problem/statement.php?id=120)  |
 | 121          | [ChiclesDeRegalo_121.java](src/aceptaelreto/ChiclesDeRegalo_121.java)          | [Chicles de Regalo](https://aceptaelreto.com/problem/statement.php?id=121)  |
+| 122          | [AvituallamientoEnLasEtapasCiclistas_122.java](src/aceptaelreto/AvituallamientoEnLasEtapasCiclistas_122.java)          | [Avituallamiento en las etapas ciclistas](https://aceptaelreto.com/problem/statement.php?id=122)  |
+| 122          | [AvituallamientoEnLasEtapasCiclistasMLE_122.java](src/aceptaelreto/AvituallamientoEnLasEtapasCiclistasMLE_122.java)          | [Avituallamiento en las etapas ciclistas](https://aceptaelreto.com/problem/statement.php?id=122)  |
 | 125          | [NumerosVampiro_125.java](src/aceptaelreto/NumerosVampiro_125.java)          | [Números vampiro](https://aceptaelreto.com/problem/statement.php?id=125)  |
 | 130          | [MejorImposible_130.java](src/aceptaelreto/MejorImposible_130.java)          | [Mejor...Imposible](https://aceptaelreto.com/problem/statement.php?id=130)  |
 | 131          | [LlenandoPiscinas_131.java](src/aceptaelreto/LlenandoPiscinas_131.java)          | [Llenando piscinas](https://aceptaelreto.com/problem/statement.php?id=131)  |
