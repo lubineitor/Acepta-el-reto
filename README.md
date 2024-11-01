@@ -34,6 +34,7 @@ Mis soluciones de Acepta el Reto
 | 132          | [LasCartasDelAbuelo_132.java](src/aceptaelreto/LasCartasDelAbuelo_132.java)          | [Las cartas del abuelo](https://aceptaelreto.com/problem/statement.php?id=132)  |
 | 137          | [HundirLaFlota_137.java](src/aceptaelreto/HundirLaFlota_137.java)          | [Hundir la flota](https://aceptaelreto.com/problem/statement.php?id=137)  |
 | 139          | [NumerosCubifinitos_139.java](src/aceptaelreto/NumerosCubifinitos_139.java)          | [Números Cubifinitos](https://aceptaelreto.com/problem/statement.php?id=139)  |
+| 140          | [SumaDeDigitos_140.java](src/aceptaelreto/SumaDeDigitos_140.java)          | [Suma de dígitos](https://aceptaelreto.com/problem/statement.php?id=140)  |
 | 141          | [ParéntesisBalenceados_141.java](src/aceptaelreto/ParéntesisBalenceados_141.java)          | [Paréntesis balanceados](https://aceptaelreto.com/problem/statement.php?id=141)  |
 | 144          | [TecladoEstropeado_144.java](src/aceptaelreto/TecladoEstropeado_144.java)          | [Teclado Estropeado](https://aceptaelreto.com/problem/statement.php?id=144)  |
 | 144          | [TecladoEstropeado2_144.java](src/aceptaelreto/TecladoEstropeado2_144.java)          | [Teclado Estropeado 2](https://aceptaelreto.com/problem/statement.php?id=144)  |
