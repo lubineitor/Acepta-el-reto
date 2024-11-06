@@ -5,7 +5,7 @@ import java.util.*;
 
 class Ciclista implements Comparable<Ciclista> {
 	public int posicion;
-	public int tiempo; // Tiempo medido en segundos
+	public int tiempo;
 
 	public Ciclista(int tiempo) {
 		this.tiempo = tiempo;
@@ -13,11 +13,7 @@ class Ciclista implements Comparable<Ciclista> {
 
 	@Override
 	public int compareTo(Ciclista c) {
-		// Devuelve:
-		// valor negativo: si este objeto es menor
-		// cero: si son iguales
-		// valor positivo: si este objeto es mayor
-		return this.tiempo - c.tiempo;
+		return Integer.compare(this.tiempo, c.tiempo);
 	}
 }
 
@@ -26,35 +22,31 @@ public class EntrandoEnPeloton_464 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		PrintWriter pw = new PrintWriter(System.out);
-		Ciclista[] ciclistas, entradas;
-		int numeroCiclistas;
-
 		String input;
+
 		while ((input = br.readLine()) != null && !input.isEmpty()) {
-			numeroCiclistas = Integer.parseInt(input.trim());
-			ciclistas = new Ciclista[numeroCiclistas];
-			entradas = new Ciclista[numeroCiclistas];
-			int horas, minutos, segundos;
-			String tiempo;
-			int posicion;
+			int numeroCiclistas = Integer.parseInt(input.trim());
+			Ciclista[] ciclistas = new Ciclista[numeroCiclistas];
+			Ciclista[] entradas = new Ciclista[numeroCiclistas];
 
 			for (int i = 0; i < numeroCiclistas; i++) {
-				tiempo = br.readLine().trim();
+				String[] tiempoParts = br.readLine().trim().split(":");
+				int horas = Integer.parseInt(tiempoParts[0]);
+				int minutos = Integer.parseInt(tiempoParts[1]);
+				int segundos = Integer.parseInt(tiempoParts[2]);
 
-				horas = Integer.parseInt(tiempo.substring(0, 2));
-				minutos = Integer.parseInt(tiempo.substring(3, 5));
-				segundos = Integer.parseInt(tiempo.substring(6, 8));
-
-				ciclistas[i] = new Ciclista(horas * 3600 + minutos * 60 + segundos);
-				entradas[i] = ciclistas[i];
+				int tiempoTotal = horas * 3600 + minutos * 60 + segundos;
+				Ciclista ciclista = new Ciclista(tiempoTotal);
+				ciclistas[i] = ciclista;
+				entradas[i] = ciclista;
 			}
 
 			Arrays.sort(ciclistas);
 
-			posicion = 1;
+			int posicion = 1;
 			ciclistas[0].posicion = posicion;
 
-			for (int i = 1; i < ciclistas.length; i++) {
+			for (int i = 1; i < numeroCiclistas; i++) {
 				if (ciclistas[i].tiempo > ciclistas[i - 1].tiempo + 1) {
 					posicion = i + 1;
 				}
@@ -64,11 +56,9 @@ public class EntrandoEnPeloton_464 {
 			for (Ciclista entrada : entradas) {
 				pw.println(entrada.posicion);
 			}
-
 			pw.println("---");
 		}
 
 		pw.flush();
-		pw.close();
 	}
 }
