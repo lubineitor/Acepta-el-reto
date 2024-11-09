@@ -26,29 +26,50 @@ public class MatricesTriangulares_160 {
 		return true;
 	}
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		PrintWriter pw = new PrintWriter(System.out);
 
 		String input;
-		while (!(input = br.readLine()).equals("0")) {
-			int filas = Integer.parseInt(input);
-			int[][] matriz = new int[filas][filas];
 
-			for (int fila = 0; fila < filas; fila++) {
-				String[] datosFila = br.readLine().split(" ");
-				for (int col = 0; col < filas; col++) {
-					matriz[fila][col] = Integer.parseInt(datosFila[col]);
+		try {
+			while (!(input = br.readLine()).equals("0")) {
+				int filas;
+				try {
+					filas = Integer.parseInt(input);
+					if (filas <= 0) {
+						pw.println("NO");
+						continue;
+					}
+				} catch (NumberFormatException e) {
+					pw.println("NO");
+					continue;
 				}
-			}
 
-			if (esTriangularSuperior(matriz) || esTriangularInferior(matriz)) {
-				pw.println("SI");
-			} else {
-				pw.println("NO");
+				int[][] matriz = new int[filas][filas];
+
+				for (int fila = 0; fila < filas; fila++) {
+					String[] datosFila = br.readLine().split(" ");
+					if (datosFila.length != filas) {
+						pw.println("NO");
+						break;
+					}
+					for (int col = 0; col < filas; col++) {
+						try {
+							matriz[fila][col] = Integer.parseInt(datosFila[col]);
+						} catch (NumberFormatException e) {
+							pw.println("NO");
+							break;
+						}
+					}
+				}
+
+				pw.println(esTriangularSuperior(matriz) || esTriangularInferior(matriz) ? "SI" : "NO");
 			}
+		} catch (IOException e) {
+			pw.println("Error de entrada");
+		} finally {
+			pw.flush();
 		}
-
-		pw.flush();
 	}
 }
