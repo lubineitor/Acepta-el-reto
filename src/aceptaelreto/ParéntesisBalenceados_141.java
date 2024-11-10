@@ -1,7 +1,6 @@
 package aceptaelreto;
 
-import java.util.Scanner;
-import java.util.Stack;
+import java.util.*;
 
 public class ParéntesisBalenceados_141 {
 
