@@ -1,19 +1,19 @@
 package aceptaelreto;
 
-import java.io.IOException;
+import java.io.*;
 
 public class Ascensor2_156 {
 
 	private static int readInt() throws IOException {
 		boolean negativo = false;
-		int ret = 0; // Valor que se va a devolver
+		int ret = 0;
 		int c;
 		c = System.in.read();
-		if (c == 45) { // Signo -
+		if (c == 45) {
 			negativo = true;
 			c = System.in.read();
 		}
-		while (c != 10 && c != 32) { // Mientras no se pulse Enter o espacio
+		while (c != 10 && c != 32) {
 			ret = ret * 10 + c - '0';
 
 			c = System.in.read();
@@ -29,7 +29,6 @@ public class Ascensor2_156 {
 		int recorrido, origen, destino;
 
 		while ((origen = readInt()) != -1) {
-			// Cada iteracción representa un caso de prueba.
 			recorrido = 0;
 			while ((destino = readInt()) != -1) {
 				recorrido += Math.abs(origen - destino);
@@ -39,15 +38,3 @@ public class Ascensor2_156 {
 		}
 	}
 }
-
-//    private static int readNat() throws IOException {
-//        int ret = 0; //Valor que se va a devolver
-//        int c;
-//        c = System.in.read();
-//        while (c != 10 && c != 32) { //Mientras no se pulse Enter o espacio
-//            ret = ret * 10 + c - '0';
-//
-//            c = System.in.read();
-//        }
-//        return ret;
-//    }
