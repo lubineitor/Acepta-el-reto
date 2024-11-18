@@ -97,5 +97,6 @@ Mis soluciones de Acepta el Reto
 | 663          | [ContandoDesdeElCero_663.java](src/aceptaelreto/ContandoDesdeElCero_663.java)          | [Contando desde el cero](https://aceptaelreto.com/problem/statement.php?id=663)  |
 | 667          | [Pipos_667.java](src/aceptaelreto/Pipos_667.java)          | [Pipos](https://aceptaelreto.com/problem/statement.php?id=667)  |
 | 738          | [Torfiles_738.java](src/aceptaelreto/Torfiles_738.java)          | [Torfiles](https://aceptaelreto.com/problem/statement.php?id=738)  |
+| 751          | [Coetanos_751.java](src/aceptaelreto/Coetanos_751.java)          | [Coetáneos](https://aceptaelreto.com/problem/statement.php?id=751)  |
 | 754          | [PalindromosOcultos_754.java](src/aceptaelreto/PalindromosOcultos_754.java)          | [Palíndromos ocultos](https://aceptaelreto.com/problem/statement.php?id=754)  |
 | 760          | [BloqueSeguro_760.java](src/aceptaelreto/BloqueSeguro_760.java)          | [Bloque Seguro](https://aceptaelreto.com/problem/statement.php?id=760)  |
