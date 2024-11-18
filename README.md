@@ -31,6 +31,7 @@ Mis soluciones de Acepta el Reto
 | 125          | [NumerosVampiro_125.java](src/aceptaelreto/NumerosVampiro_125.java)          | [Números vampiro](https://aceptaelreto.com/problem/statement.php?id=125)  |
 | 130          | [MejorImposible_130.java](src/aceptaelreto/MejorImposible_130.java)          | [Mejor...Imposible](https://aceptaelreto.com/problem/statement.php?id=130)  |
 | 131          | [LlenandoPiscinas_131.java](src/aceptaelreto/LlenandoPiscinas_131.java)          | [Llenando piscinas](https://aceptaelreto.com/problem/statement.php?id=131)  |
+| 131          | [LlenandoPiscinas2_131.java](src/aceptaelreto/LlenandoPiscinas2_131.java)          | [Llenando piscinas](https://aceptaelreto.com/problem/statement.php?id=131)  |
 | 132          | [LasCartasDelAbuelo_132.java](src/aceptaelreto/LasCartasDelAbuelo_132.java)          | [Las cartas del abuelo](https://aceptaelreto.com/problem/statement.php?id=132)  |
 | 134          | [EscaleraDeColor_134.java](src/aceptaelreto/EscaleraDeColor_134.java)          | [Escalera de color](https://aceptaelreto.com/problem/statement.php?id=134)  |
 | 137          | [HundirLaFlota_137.java](src/aceptaelreto/HundirLaFlota_137.java)          | [Hundir la flota](https://aceptaelreto.com/problem/statement.php?id=137)  |
