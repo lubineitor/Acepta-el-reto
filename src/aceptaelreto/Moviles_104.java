@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.util.Scanner;
 
 class Movil {
+	
 	int pi, di, pd, dd;
 	Movil left, right;
 
@@ -17,6 +18,7 @@ class Movil {
 }
 
 public class Moviles_104 {
+	
 	private static Scanner sc = new Scanner(System.in);
 
 	private static boolean isBalanced(Movil movil) {

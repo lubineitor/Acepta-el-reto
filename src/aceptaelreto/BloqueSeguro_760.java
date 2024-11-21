@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.util.*;
 
 public class BloqueSeguro_760 {
+	
 	private static final int MOD = 1_000_000_007;
 
 	private static long calculatePermutations(int n, int from, int to) {

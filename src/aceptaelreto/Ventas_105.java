@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class Ventas_105 {
+	
 	public static void main(String[] args) {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		String[] nombreDias = { "MARTES", "MIERCOLES", "JUEVES", "VIERNES", "SABADO", "DOMINGO" };

@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class SerieDePotencias_222 {
+	
 	public static void main(String[] args) {
 		final int MOD = 1000007;
 

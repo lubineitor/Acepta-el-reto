@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class Torfiles_738 {
+	
 	public static void main(String[] args) {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		try {

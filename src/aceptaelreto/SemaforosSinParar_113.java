@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.util.*;
 
 class TrafficLight {
+	
 	int redCycleDuration;
 	int greenCycleDuration;
 	int totalCycleDuration;

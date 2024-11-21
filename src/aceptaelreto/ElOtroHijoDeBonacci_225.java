@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class ElOtroHijoDeBonacci_225 {
+	
 	private static final int MOD = 1_000_000_007;
 
 	public static void main(String[] args) throws IOException {

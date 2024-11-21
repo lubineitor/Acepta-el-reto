@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 class Ciclista implements Comparable<Ciclista> {
+	
 	public int posicion;
 	public int tiempo;
 

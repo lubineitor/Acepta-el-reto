@@ -50,6 +50,8 @@ Mis soluciones de Acepta el Reto
 | 171          | [AbadiasPirenaicas_171.java](src/aceptaelreto/AbadiasPirenaicas_171.java)          | [Abadías Pirenaicas](https://aceptaelreto.com/problem/statement.php?id=171)  |
 | 176          | [CampoDeMinas_176.java](src/aceptaelreto/CampoDeMinas_176.java)          | [Campo de Minas](https://aceptaelreto.com/problem/statement.php?id=176)  |
 | 182          | [PersistenciaMultiplicativaNumeros_182.java](src/aceptaelreto/PersistenciaMultiplicativaNumeros_182.java)          | [Persistencia multiplicativa de los números](https://aceptaelreto.com/problem/statement.php?id=182)  |
+| 183          | [Anelidos_183.java](src/aceptaelreto/Anelidos_183.java)          | [Anélidos](https://aceptaelreto.com/problem/statement.php?id=183)  |
+| 183          | [Anelidos2_MLE_183.java](src/aceptaelreto/Anelidos2_MLE_183.java)          | [Anélidos](https://aceptaelreto.com/problem/statement.php?id=183)  |
 | 185          | [Potitos_185.java](src/aceptaelreto/Potitos_185.java)          | [Potitos](https://aceptaelreto.com/problem/statement.php?id=185)  |
 | 186          | [YElGanadorEs_186.java](src/aceptaelreto/YElGanadorEs_186.java)          | [Y el ganador es...](https://aceptaelreto.com/problem/statement.php?id=186)  |
 | 200          | [Colores_200.java](src/aceptaelreto/Colores_200.java)          | [Colores](https://aceptaelreto.com/problem/statement.php?id=200)  |

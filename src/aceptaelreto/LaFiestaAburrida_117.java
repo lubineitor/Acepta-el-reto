@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class LaFiestaAburrida_117 {
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		int numeroPersonas = Integer.parseInt(reader.readLine());

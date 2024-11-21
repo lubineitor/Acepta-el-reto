@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class PalindromosOcultos_754 {
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		String inputLine;

@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class ConectandoCables_344 {
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 

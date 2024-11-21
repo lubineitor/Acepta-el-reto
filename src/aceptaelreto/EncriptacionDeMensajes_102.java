@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.util.*;
 
 public class EncriptacionDeMensajes_102 {
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 

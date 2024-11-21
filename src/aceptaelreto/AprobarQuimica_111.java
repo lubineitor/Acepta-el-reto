@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class AprobarQuimica_111 {
+	
 	public static int disponibles(String nivel) {
 		switch (nivel.charAt(1)) {
 		case 's':

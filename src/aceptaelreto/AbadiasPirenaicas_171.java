@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class AbadiasPirenaicas_171 {
+	
 	public static void main(String[] args) {
 		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 				PrintWriter pw = new PrintWriter(new OutputStreamWriter(System.out))) {

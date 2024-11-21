@@ -9,18 +9,15 @@ public class PalabrasPentavocalicas2_300 {
 		Scanner in = new Scanner(System.in);
 		String palabra;
 		int casos = in.nextInt();
-		in.nextLine(); // Para vaciar el buffer de entrada (aún queda un enter pendiente de procesar)
+		in.nextLine();
 		int pos;
 		byte pentavocalica;
 
 		for (; casos > 0; casos--) {
-			// En cada iteración proceso una palabra nueva
 			palabra = in.nextLine();
 			pentavocalica = 0;
 			pos = 0;
 			char letra;
-			// En cada iteración, proceso la letra que está
-			// en la posición pos
 			while (pos < palabra.length() && pentavocalica != 31) {
 				letra = palabra.charAt(pos);
 				if (letra == 'a') {

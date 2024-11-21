@@ -4,6 +4,7 @@ import java.util.*;
 import java.io.*;
 
 public class CodigosDeBarras_106 {
+	
 	private static final Map<String, String> PAISES_MAP;
 	private static final Map<String, String> CODIGOS_ADICIONALES;
 

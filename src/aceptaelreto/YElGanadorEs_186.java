@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class YElGanadorEs_186 {
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		PrintWriter writer = new PrintWriter(System.out);

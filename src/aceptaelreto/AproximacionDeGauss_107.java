@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class AproximacionDeGauss_107 {
+	
 	public static void main(String[] args) throws IOException {
 		int tamMax = 100000;
 		int[] pi = new int[tamMax + 1];

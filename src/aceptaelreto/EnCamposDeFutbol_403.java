@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class EnCamposDeFutbol_403 {
+	
 	public static void main(String[] args) {
 		try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 				PrintWriter writer = new PrintWriter(System.out)) {

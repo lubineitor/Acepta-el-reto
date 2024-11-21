@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class HundirLaFlota_137 {
+	
 	public static int size;
 	public static boolean correcto;
 

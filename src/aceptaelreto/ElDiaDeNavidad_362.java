@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class ElDiaDeNavidad_362 {
+	
 	public static void main(String[] args) throws IOException {
 		try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
 			StringBuilder output = new StringBuilder();

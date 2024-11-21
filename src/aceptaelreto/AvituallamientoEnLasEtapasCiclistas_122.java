@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.util.*;
 
 public class AvituallamientoEnLasEtapasCiclistas_122 {
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 

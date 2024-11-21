@@ -3,6 +3,7 @@ package aceptaelreto;
 import java.io.*;
 
 public class LlenandoPiscinas_131 {
+	
 	private static int getViajes(int piscina, int barreno, int pierde) {
 		if (barreno >= piscina) {
 			return 1;

@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class DeNuevoEnElBarDeJavier_108 {
+	
 	public static String cadenaCategoria(char categoria) {
 		switch (categoria) {
 		case 'D':
