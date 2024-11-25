@@ -23,7 +23,6 @@ public class PuntosDeSilla2_600 {
 			menorColumna = new int[columnas];
 			mayorColumna = new int[columnas];
 
-			// Lectura de datos
 			for (int f = 0; f < matriz.length; f++) {
 				menorFila[f] = Integer.MAX_VALUE;
 				mayorFila[f] = Integer.MIN_VALUE;
@@ -52,7 +51,6 @@ public class PuntosDeSilla2_600 {
 				}
 			}
 
-			// Procesamos los elementos
 			esPuntoDeSilla = false;
 			exterior: for (int f = 0; f < matriz.length; f++) {
 				for (int c = 0; c < matriz[0].length; c++) {
