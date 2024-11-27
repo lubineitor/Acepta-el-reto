@@ -56,6 +56,7 @@ Mis soluciones de Acepta el Reto
 | 183          | [Anelidos2_MLE_183.java](src/aceptaelreto/Anelidos2_MLE_183.java)          | [Anélidos](https://aceptaelreto.com/problem/statement.php?id=183)  |
 | 185          | [Potitos_185.java](src/aceptaelreto/Potitos_185.java)          | [Potitos](https://aceptaelreto.com/problem/statement.php?id=185)  |
 | 186          | [YElGanadorEs_186.java](src/aceptaelreto/YElGanadorEs_186.java)          | [Y el ganador es...](https://aceptaelreto.com/problem/statement.php?id=186)  |
+| 192          | [Por3OMas5TLE_192.java](src/aceptaelreto/Por3OMas5TLE_192.java)          | [Por 3 O Mas 5](https://aceptaelreto.com/problem/statement.php?id=192)  |
 | 200          | [Colores_200.java](src/aceptaelreto/Colores_200.java)          | [Colores](https://aceptaelreto.com/problem/statement.php?id=200)  |
 | 222          | [SerieDePotencias_222.java](src/aceptaelreto/SerieDePotencias_222.java)          | [Serie de potencias](https://aceptaelreto.com/problem/statement.php?id=222)  |
 | 225          | [ElOtroHijoDeBonacci_225.java](src/aceptaelreto/ElOtroHijoDeBonacci_225.java)          | [El Otro Hijo de Bonacci](https://aceptaelreto.com/problem/statement.php?id=225)  |
