@@ -73,6 +73,9 @@ Mis soluciones de Acepta el Reto
 | 402          | [LasDimensionesDelPuzzle_402.java](src/aceptaelreto/LasDimensionesDelPuzzle_402.java)          | [Las Dimensiones Del Puzzle](https://aceptaelreto.com/problem/statement.php?id=402)  |
 | 403          | [EnCamposDeFutbol_403.java](src/aceptaelreto/EnCamposDeFutbol_403.java)          | [En campos de fútbol](https://aceptaelreto.com/problem/statement.php?id=403)  |
 | 416          | [MichaelJFoxyelPatoDonald_416.java](src/aceptaelreto/MichaelJFoxyelPatoDonald_416.java)          | [Michael J. Fox y el Pato Donald](https://aceptaelreto.com/problem/statement.php?id=416)  |
+| 421          | [HamburguesquinCE_421.java](src/aceptaelreto/HamburguesquinCE_421.java)          | [Hamburguesquin](https://aceptaelreto.com/problem/statement.php?id=421)  |
+| 421          | [HamburguesquinTLE_421.java](src/aceptaelreto/HamburguesquinTLE_421.java)          | [Hamburguesquin](https://aceptaelreto.com/problem/statement.php?id=421)  |
+| 421          | [HamburguesquinTLE2_421.java](src/aceptaelreto/HamburguesquinTLE2_421.java)          | [Hamburguesquin](https://aceptaelreto.com/problem/statement.php?id=421)  |
 | 429          | [OrganizandoHangares_429.java](src/aceptaelreto/OrganizandoHangares_429.java)          | [Organizando Hangares](https://aceptaelreto.com/problem/statement.php?id=429)  |
 | 438          | [Esgritura_438.java](src/aceptaelreto/Esgritura_438.java)          | [Esgritura](https://aceptaelreto.com/problem/statement.php?id=438)  |
 | 446          | [AbuelasFalsas_446.java](src/aceptaelreto/AbuelasFalsas_446.java)          | [Abuelas Falsas](https://aceptaelreto.com/problem/statement.php?id=446)  |
