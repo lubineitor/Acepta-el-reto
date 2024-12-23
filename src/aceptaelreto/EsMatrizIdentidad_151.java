@@ -19,30 +19,31 @@ public class EsMatrizIdentidad_151 {
         return true;
     }
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        PrintWriter pw = new PrintWriter(System.out);
+    public static void main(String[] args) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+             PrintWriter pw = new PrintWriter(System.out)) {
 
-        String linea;
-        while ((linea = br.readLine()) != null) {
-            int filas = Integer.parseInt(linea.trim());
-            if (filas == 0) break;
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                int filas = Integer.parseInt(linea.trim());
+                if (filas == 0) break;
 
-            int[][] matriz = new int[filas][filas];
-            for (int f = 0; f < filas; f++) {
-                String[] valores = br.readLine().trim().split(" ");
-                for (int c = 0; c < filas; c++) {
-                    matriz[f][c] = Integer.parseInt(valores[c]);
+                int[][] matriz = new int[filas][filas];
+                for (int f = 0; f < filas; f++) {
+                    String[] valores = br.readLine().trim().split(" ");
+                    for (int c = 0; c < filas; c++) {
+                        matriz[f][c] = Integer.parseInt(valores[c]);
+                    }
                 }
+
+                pw.println(esIdentidad(matriz) ? "SI" : "NO");
             }
 
-            if (esIdentidad(matriz)) {
-                pw.println("SI");
-            } else {
-                pw.println("NO");
-            }
+            pw.flush();
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        } catch (NumberFormatException e) {
+            System.err.println(e.getMessage());
         }
-
-        pw.flush();
     }
 }
