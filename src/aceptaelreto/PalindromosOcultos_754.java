@@ -1,7 +1,7 @@
 package aceptaelreto;
 
-import java.io.*;
 import java.util.*;
+import java.io.*;
 
 public class PalindromosOcultos_754 {
 	
