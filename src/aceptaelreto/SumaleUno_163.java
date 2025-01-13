@@ -1,7 +1,7 @@
 package aceptaelreto;
 
 import java.io.*;
-import java.math.BigInteger;
+import java.math.*;
 
 public class SumaleUno_163 {
 
