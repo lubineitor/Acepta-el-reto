@@ -110,3 +110,5 @@ Mis soluciones de Acepta el Reto
 | 751          | [Coetanos_751.java](src/aceptaelreto/Coetanos_751.java)          | [Coetáneos](https://aceptaelreto.com/problem/statement.php?id=751)  |
 | 754          | [PalindromosOcultos_754.java](src/aceptaelreto/PalindromosOcultos_754.java)          | [Palíndromos ocultos](https://aceptaelreto.com/problem/statement.php?id=754)  |
 | 760          | [BloqueSeguro_760.java](src/aceptaelreto/BloqueSeguro_760.java)          | [Bloque Seguro](https://aceptaelreto.com/problem/statement.php?id=760)  |
+| 782          | [ElAbueloCentenario_782.java](src/aceptaelreto/ElAbueloCentenario_782.java)          | [El abuelo centenario](https://aceptaelreto.com/problem/statement.php?id=782)  |
+| 782          | [ElAbueloCentenarioTLE_782.java](src/aceptaelreto/ElAbueloCentenarioTLE_782.java)          | [El abuelo centenario](https://aceptaelreto.com/problem/statement.php?id=782)  |
