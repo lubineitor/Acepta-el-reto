@@ -106,6 +106,8 @@ Mis soluciones de Acepta el Reto
 | 653          | [RunnersApp_653.java](src/aceptaelreto/RunnersApp_653.java)          | [RunnersApp](https://aceptaelreto.com/problem/statement.php?id=653)  |
 | 663          | [ContandoDesdeElCero_663.java](src/aceptaelreto/ContandoDesdeElCero_663.java)          | [Contando desde el cero](https://aceptaelreto.com/problem/statement.php?id=663)  |
 | 667          | [Pipos_667.java](src/aceptaelreto/Pipos_667.java)          | [Pipos](https://aceptaelreto.com/problem/statement.php?id=667)  |
+| 688          | [EvitandoTropiezos_688.java](src/aceptaelreto/EvitandoTropiezos_688.java)          | [Evitando tropiezos](https://aceptaelreto.com/problem/statement.php?id=688)  |
+| 688          | [EvitandoTropiezosMLE_688.java](src/aceptaelreto/EvitandoTropiezosMLE_688.java)          | [Evitando tropiezos](https://aceptaelreto.com/problem/statement.php?id=688)  |
 | 738          | [Torfiles_738.java](src/aceptaelreto/Torfiles_738.java)          | [Torfiles](https://aceptaelreto.com/problem/statement.php?id=738)  |
 | 751          | [Coetanos_751.java](src/aceptaelreto/Coetanos_751.java)          | [Coetáneos](https://aceptaelreto.com/problem/statement.php?id=751)  |
 | 754          | [PalindromosOcultos_754.java](src/aceptaelreto/PalindromosOcultos_754.java)          | [Palíndromos ocultos](https://aceptaelreto.com/problem/statement.php?id=754)  |
