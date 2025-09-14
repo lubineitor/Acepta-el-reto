@@ -114,3 +114,4 @@ Mis soluciones de Acepta el Reto
 | 760          | [BloqueSeguro_760.java](src/aceptaelreto/BloqueSeguro_760.java)          | [Bloque Seguro](https://aceptaelreto.com/problem/statement.php?id=760)  |
 | 782          | [ElAbueloCentenario_782.java](src/aceptaelreto/ElAbueloCentenario_782.java)          | [El abuelo centenario](https://aceptaelreto.com/problem/statement.php?id=782)  |
 | 782          | [ElAbueloCentenarioTLE_782.java](src/aceptaelreto/ElAbueloCentenarioTLE_782.java)          | [El abuelo centenario](https://aceptaelreto.com/problem/statement.php?id=782)  |
+| 800          | [TravesurasEnElHotelDeHilbert_800.java](src/aceptaelreto/TravesurasEnElHotelDeHilbert_800.java)          | [Travesuras en el hotel de Hilbert](https://aceptaelreto.com/problem/statement.php?id=800)  |
