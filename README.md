@@ -108,6 +108,7 @@ Mis soluciones de Acepta el Reto
 | 667          | [Pipos_667.java](src/aceptaelreto/Pipos_667.java)          | [Pipos](https://aceptaelreto.com/problem/statement.php?id=667)  |
 | 688          | [EvitandoTropiezos_688.java](src/aceptaelreto/EvitandoTropiezos_688.java)          | [Evitando tropiezos](https://aceptaelreto.com/problem/statement.php?id=688)  |
 | 688          | [EvitandoTropiezosMLE_688.java](src/aceptaelreto/EvitandoTropiezosMLE_688.java)          | [Evitando tropiezos](https://aceptaelreto.com/problem/statement.php?id=688)  |
+| 725          | [LasLucesEnElRio_725.java](src/aceptaelreto/LasLucesEnElRio_725.java)          | [Las luces en el rio](https://aceptaelreto.com/problem/statement.php?id=725)  |
 | 738          | [Torfiles_738.java](src/aceptaelreto/Torfiles_738.java)          | [Torfiles](https://aceptaelreto.com/problem/statement.php?id=738)  |
 | 751          | [Coetanos_751.java](src/aceptaelreto/Coetanos_751.java)          | [Coetáneos](https://aceptaelreto.com/problem/statement.php?id=751)  |
 | 754          | [PalindromosOcultos_754.java](src/aceptaelreto/PalindromosOcultos_754.java)          | [Palíndromos ocultos](https://aceptaelreto.com/problem/statement.php?id=754)  |
