@@ -1,4 +1,3 @@
-package aceptaelreto;
 
 import java.io.*;
 import java.math.*;

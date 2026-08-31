@@ -1,5 +1,4 @@
 
-package aceptaelreto;
 
 import java.io.*;
 
