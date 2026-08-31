@@ -1,31 +1,29 @@
-
 import java.io.*;
+import java.util.StringTokenizer;
 
 public class DivisoresDelFactorial_126 {
 
-	public static void main(String[] args) {
-		try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-				PrintWriter writer = new PrintWriter(System.out)) {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder output = new StringBuilder();
 
-			while (true) {
-				String[] input = reader.readLine().split(" ");
-				int p = Integer.parseInt(input[0]);
-				int n = Integer.parseInt(input[1]);
+        while (true) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
 
-				if (p < 0 && n < 0) {
-					break;
-				}
+            int p = Integer.parseInt(st.nextToken());
+            int n = Integer.parseInt(st.nextToken());
 
-				if (p <= n) {
-					writer.println("YES");
-				} else {
-					writer.println("NO");
-				}
-			}
+            if (p < 0 && n < 0) {
+                break;
+            }
 
-			writer.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+            if (p == 1 || p <= n) {
+                output.append("YES\n");
+            } else {
+                output.append("NO\n");
+            }
+        }
+
+        System.out.print(output);
+    }
 }
