@@ -2,7 +2,7 @@ package aceptaelreto;
 
 import java.io.*;
 
-public class Loginlogout_529 {
+public class LoginLogout_529 {
 
 	public static void main(String[] args) throws IOException {
 

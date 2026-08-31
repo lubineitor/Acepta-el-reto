@@ -3,7 +3,7 @@ package aceptaelreto;
 import java.io.*;
 import java.util.*;
 
-public class MichaelJFoxyelPatoDonald_416 {
+public class MichaelJFoxYElPatoDonald_416 {
 
 	public static void main(String[] args) {
 		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

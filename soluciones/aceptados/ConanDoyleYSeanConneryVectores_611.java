@@ -2,7 +2,7 @@ package aceptaelreto;
 
 import java.util.Scanner;
 
-public class ConanDoyleySeanConneryVectores_611 {
+public class ConanDoyleYSeanConneryVectores_611 {
 
 	private static String primeraObraSir(int ano, int[] anos, String[] obras) {
 		int menor = Integer.MAX_VALUE;

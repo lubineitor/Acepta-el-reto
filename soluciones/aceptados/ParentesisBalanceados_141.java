@@ -2,7 +2,7 @@ package aceptaelreto;
 
 import java.util.*;
 
-public class ParéntesisBalenceados_141 {
+public class ParentesisBalanceados_141 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
