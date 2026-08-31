@@ -153,6 +153,7 @@ Se conservan porque permiten comparar distintas formas de llegar a una solución
 | 123 | [Conjugar verbos](https://www.aceptaelreto.com/problem/statement.php?id=123) | [`ConjugarVerbos_123.java`](soluciones/aceptados/ConjugarVerbos_123.java) |
 | 125 | [Números vampiro](https://www.aceptaelreto.com/problem/statement.php?id=125) | [`NumerosVampiro_125.java`](soluciones/aceptados/NumerosVampiro_125.java) |
 | 126 | [Divisores del Factorial](https://www.aceptaelreto.com/problem/statement.php?id=126) | [`DivisoresDelFactorial_126.java`](soluciones/aceptados/DivisoresDelFactorial_126.java) |
+| 128 | [Florencia](https://www.aceptaelreto.com/problem/statement.php?id=128) | [`Florencia_128 .java`](soluciones/aceptados/Florencia_128.java) |
 | 130 | [Mejor...Imposible](https://www.aceptaelreto.com/problem/statement.php?id=130) | [`MejorImposible_130.java`](soluciones/aceptados/MejorImposible_130.java) |
 | 131 | [Llenando piscinas](https://www.aceptaelreto.com/problem/statement.php?id=131) | [`LlenandoPiscinas_131.java`](soluciones/aceptados/LlenandoPiscinas_131.java) |
 | 131 | [Llenando piscinas](https://www.aceptaelreto.com/problem/statement.php?id=131) | [`LlenandoPiscinas2_131.java`](soluciones/aceptados/LlenandoPiscinas2_131.java) |
