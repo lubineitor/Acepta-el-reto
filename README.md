@@ -180,6 +180,7 @@ Se conservan porque permiten comparar distintas formas de llegar a una solución
 | 185 | [Potitos](https://www.aceptaelreto.com/problem/statement.php?id=185) | [`Potitos_185.java`](soluciones/aceptados/Potitos_185.java) |
 | 186 | [Y el ganador es...](https://www.aceptaelreto.com/problem/statement.php?id=186) | [`YElGanadorEs_186.java`](soluciones/aceptados/YElGanadorEs_186.java) |
 | 191 | [Los problemas de ser rico](https://www.aceptaelreto.com/problem/statement.php?id=191) | [`LosProblemasDeSerRico_191.java`](soluciones/aceptados/LosProblemasDeSerRico_191.java) |
+| 192 | [Por 3 o más 5](https://www.aceptaelreto.com/problem/statement.php?id=192) | [`Por3OMas5_192.java`](soluciones/aceptados/Por3OMas5_192.java) |
 | 200 | [Colores](https://www.aceptaelreto.com/problem/statement.php?id=200) | [`Colores_200.java`](soluciones/aceptados/Colores_200.java) |
 | 222 | [Serie de potencias](https://www.aceptaelreto.com/problem/statement.php?id=222) | [`SerieDePotencias_222.java`](soluciones/aceptados/SerieDePotencias_222.java) |
 | 225 | [El Otro Hijo de Bonacci](https://www.aceptaelreto.com/problem/statement.php?id=225) | [`ElOtroHijoDeBonacci_225.java`](soluciones/aceptados/ElOtroHijoDeBonacci_225.java) |
