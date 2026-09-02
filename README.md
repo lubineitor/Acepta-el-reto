@@ -182,6 +182,7 @@ Se conservan porque permiten comparar distintas formas de llegar a una solución
 | 191 | [Los problemas de ser rico](https://www.aceptaelreto.com/problem/statement.php?id=191) | [`LosProblemasDeSerRico_191.java`](soluciones/aceptados/LosProblemasDeSerRico_191.java) |
 | 192 | [Por 3 o más 5](https://www.aceptaelreto.com/problem/statement.php?id=192) | [`Por3OMas5_192.java`](soluciones/aceptados/Por3OMas5_192.java) |
 | 200 | [Colores](https://www.aceptaelreto.com/problem/statement.php?id=200) | [`Colores_200.java`](soluciones/aceptados/Colores_200.java) |
+| 201 | [Natalidad](https://www.aceptaelreto.com/problem/statement.php?id=201) | [`Natalidad_201.java`](soluciones/aceptados/Natalidad_201.java) |
 | 222 | [Serie de potencias](https://www.aceptaelreto.com/problem/statement.php?id=222) | [`SerieDePotencias_222.java`](soluciones/aceptados/SerieDePotencias_222.java) |
 | 225 | [El Otro Hijo de Bonacci](https://www.aceptaelreto.com/problem/statement.php?id=225) | [`ElOtroHijoDeBonacci_225.java`](soluciones/aceptados/ElOtroHijoDeBonacci_225.java) |
 | 238 | [Repartiendo el botín](https://www.aceptaelreto.com/problem/statement.php?id=238) | [`RepartiendoElBotin_238.java`](soluciones/aceptados/RepartiendoElBotin_238.java) |
