@@ -2,79 +2,95 @@ import java.io.*;
 
 public class Natalidad_201 {
 
-    public static void main(String[] args) throws IOException {
+    private static final byte[] stack = new byte[50_000];
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder salida = new StringBuilder();
+    public static void main(String[] args) throws Exception {
 
-        String arbol;
+        BufferedInputStream in = new BufferedInputStream(System.in);
+        BufferedWriter out =
+                new BufferedWriter(new OutputStreamWriter(System.out));
 
-        while ((arbol = br.readLine()) != null) {
+        while (true) {
 
-            if (arbol.equals(".")) {
+            int raiz = siguienteCaracter(in);
+
+            if (raiz == -1 || raiz == '.') {
                 break;
             }
 
             boolean cumpleNorma1 = true;
             boolean cumpleNorma2 = true;
 
-            byte[] pila = new byte[(arbol.length() + 1) / 2 + 1];
+            int top = 0;
 
-            int cima = 0;
+            stack[0] = 0;
 
-            for (int i = 1; i < arbol.length(); i++) {
+            while (top >= 0) {
 
-                boolean hayHijo = arbol.charAt(i) != '.';
+                int caracter = siguienteCaracter(in);
+                byte estado = stack[top];
 
-                byte estado = pila[cima];
+                if (caracter == '.') {
 
-                if (estado == 0) {
+                    if (estado == 0) {
+                        stack[top] = 1;
+                    } else {
 
-                    pila[cima] = (byte) (hayHijo ? 2 : 1);
+                        if (estado == 2) {
+                            cumpleNorma2 = false;
+                        }
+                        top--;
 
-                    if (hayHijo) {
-                        cima++;
-                        pila[cima] = 0;
+                        while (top >= 0 && stack[top] == 3) {
+                            top--;
+                        }
                     }
 
                 } else {
 
-                    boolean hayPrimerHijo = estado == 2;
+                    if (estado == 0) {
+                        stack[top] = 2;
 
-                    int numeroHijos =
-                            (hayPrimerHijo ? 1 : 0)
-                            + (hayHijo ? 1 : 0);
-
-                    if (numeroHijos == 2) {
-                        cumpleNorma1 = false;
-                    }
-
-                    if (numeroHijos == 1) {
+                    } else if (estado == 1) {
                         cumpleNorma2 = false;
-                    }
+                        stack[top] = 3;
 
-                    cima--;
-                    
-                    if (hayHijo) {
-                        cima++;
-                        pila[cima] = 0;
+                    } else {
+                        cumpleNorma1 = false;
+                        stack[top] = 3;
                     }
+                    stack[++top] = 0;
                 }
             }
 
             if (cumpleNorma1 && cumpleNorma2) {
-                salida.append("12");
+                out.write("12\n");
             } else if (cumpleNorma1) {
-                salida.append('1');
+                out.write("1\n");
             } else if (cumpleNorma2) {
-                salida.append('2');
+                out.write("2\n");
             } else {
-                salida.append('N');
+                out.write("N\n");
             }
-
-            salida.append('\n');
         }
 
-        System.out.print(salida);
+        out.flush();
+    }
+
+    private static int siguienteCaracter(BufferedInputStream in)
+            throws IOException {
+
+        int c;
+
+        do {
+            c = in.read();
+        } while (
+                c == '\n' ||
+                c == '\r' ||
+                c == ' ' ||
+                c == '\t'
+        );
+
+        return c;
     }
 }
