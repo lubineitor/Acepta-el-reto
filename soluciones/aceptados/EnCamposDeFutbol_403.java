@@ -1,27 +1,50 @@
-
 import java.io.*;
 
 public class EnCamposDeFutbol_403 {
-	
-	public static void main(String[] args) {
-		try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-				PrintWriter writer = new PrintWriter(System.out)) {
 
-			int casos = Integer.parseInt(reader.readLine());
+    private static final BufferedInputStream IN =
+            new BufferedInputStream(System.in, 4096);
 
-			for (int i = 0; i < casos; i++) {
-				String[] input = reader.readLine().split(" ");
-				int area = Integer.parseInt(input[0]);
-				int estimacion = Integer.parseInt(input[1]);
+    private static final BufferedOutputStream OUT =
+            new BufferedOutputStream(System.out, 4096);
 
-				int minEstimacion = estimacion * 4500;
-				int maxEstimacion = estimacion * 10800;
+    private static int nextInt() throws IOException {
+        int c;
+        int n = 0;
 
-				writer.println((area >= minEstimacion && area <= maxEstimacion) ? "SI" : "NO");
-			}
+        do {
+            c = IN.read();
+        } while (c <= ' ');
 
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+        while (c > ' ') {
+            n = n * 10 + c - '0';
+            c = IN.read();
+        }
+
+        return n;
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        int casos = nextInt();
+
+        while (casos-- > 0) {
+            int superficie = nextInt();
+            int campos = nextInt();
+
+            if (superficie >= campos * 4050 &&
+                superficie <= campos * 10800) {
+
+                OUT.write('S');
+                OUT.write('I');
+            } else {
+                OUT.write('N');
+                OUT.write('O');
+            }
+
+            OUT.write('\n');
+        }
+
+        OUT.flush();
+    }
 }
