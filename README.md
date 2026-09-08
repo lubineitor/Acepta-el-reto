@@ -198,6 +198,7 @@ Se conservan porque permiten comparar distintas formas de llegar a una solución
 | 402 | [Las Dimensiones Del Puzzle](https://www.aceptaelreto.com/problem/statement.php?id=402) | [`LasDimensionesDelPuzzle_402.java`](soluciones/aceptados/LasDimensionesDelPuzzle_402.java) |
 | 403 | [En campos de fútbol](https://www.aceptaelreto.com/problem/statement.php?id=403) | [`EnCamposDeFutbol_403.java`](soluciones/aceptados/EnCamposDeFutbol_403.java) |
 | 416 | [Michael J. Fox y el Pato Donald](https://www.aceptaelreto.com/problem/statement.php?id=416) | [`MichaelJFoxyelPatoDonald_416.java`](soluciones/aceptados/MichaelJFoxyelPatoDonald_416.java) |
+| 421 | [Hamburguesquín](https://www.aceptaelreto.com/problem/statement.php?id=421) | [`Hamburguesquin_421.java`](soluciones/aceptados/Hamburguesquin_421.java) |
 | 429 | [Organizando Hangares](https://www.aceptaelreto.com/problem/statement.php?id=429) | [`OrganizandoHangares_429.java`](soluciones/aceptados/OrganizandoHangares_429.java) |
 | 438 | [Esgritura](https://www.aceptaelreto.com/problem/statement.php?id=438) | [`Esgritura_438.java`](soluciones/aceptados/Esgritura_438.java) |
 | 446 | [Abuelas Falsas](https://www.aceptaelreto.com/problem/statement.php?id=446) | [`AbuelasFalsas_446.java`](soluciones/aceptados/AbuelasFalsas_446.java) |
