@@ -226,6 +226,7 @@ Se conservan porque permiten comparar distintas formas de llegar a una solución
 | 653 | [RunnersApp](https://www.aceptaelreto.com/problem/statement.php?id=653) | [`RunnersApp_653.java`](soluciones/aceptados/RunnersApp_653.java) |
 | 663 | [Contando desde el cero](https://www.aceptaelreto.com/problem/statement.php?id=663) | [`ContandoDesdeElCero_663.java`](soluciones/aceptados/ContandoDesdeElCero_663.java) |
 | 667 | [Pipos](https://www.aceptaelreto.com/problem/statement.php?id=667) | [`Pipos_667.java`](soluciones/aceptados/Pipos_667.java) |
+| 673 | [Pipos](https://www.aceptaelreto.com/problem/statement.php?id=673) | [`AdornosEquilibrados_673.java`](soluciones/aceptados/AdornosEquilibrados_673.java) |
 | 688 | [Evitando tropiezos](https://www.aceptaelreto.com/problem/statement.php?id=688) | [`EvitandoTropiezos_688.java`](soluciones/aceptados/EvitandoTropiezos_688.java) |
 | 725 | [Las luces en el río](https://www.aceptaelreto.com/problem/statement.php?id=725) | [`LasLucesEnElRio_725.java`](soluciones/aceptados/LasLucesEnElRio_725.java) |
 | 738 | [Torfiles](https://www.aceptaelreto.com/problem/statement.php?id=738) | [`Torfiles_738.java`](soluciones/aceptados/Torfiles_738.java) |
